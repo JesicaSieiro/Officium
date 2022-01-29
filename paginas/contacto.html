@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- FUENTES DE GOOGLE -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  
+     <link rel="stylesheet" href="../styles/style.css">
+    <title>Officium</title>
+</head>
+<body class="contenidoContacto">
+    <header class="cabecera">
+        <a href="../index.html"><img src="../assets/imagenes/logo.PNG" alt="Logo de officium" class="cabecera_logo"></a>
+        <ul class="cabecera_menu">
+            <li><a href="../index.html" class="cabecera-menuInicio">Inicio</a></li>
+            <li><a href="./conocenos.html" class="cabecera-menuNosotros">Conocenos</a></li>
+            <li><a href="./galeria.html" class="cabecera-menuGaleria">Galeria</a></li>
+            <li><a href="./tutoriales.html" class="cabecera-menuTutoriales">Tutoriales</a></li>
+            <li><a href="./contacto.html" class="cabecera-menuContacto">Contacto</a></li>
+            
+        </ul>
+    </header>
+    <main class="formulario">
+        <h1 class="contenido_tituloContacto">Envianos tu consulta!</h1>
+        <!-- FORMULARIO -->
+        <form class="contenido_formulario">
+            <div class="contenido_datosFrm">
+                
+                    <input type="text" name="nombre" id="nombre" maxlength="40" placeholder="Nombre" required>
+                
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido"  maxlength="40" required>
+               
+                    <input type="email" name="mail" id="mail" placeholder="Email"  maxlength="40" required>
+                
+                    <label >En que tipo de servicio estas interesado:</label>
+                    <div class="contenido_serviciosChk">
+                        <div class="contenido--cadaOpcion">
+                            <label for="PinturaInteriores">Pintura de interiores</label><br />
+                            <input type="checkbox" name="option" id="PinturaInteriores"  />
+                        </div>
+                        <div class="contenido--cadaOpcion">
+                            <label for="PinturaExteriores">Pintura de exteriores</label>
+                            <input type="checkbox" name="option" id="PinturaExteriores" />
+                        </div>
+                            
+                
+                        <div class="contenido--cadaOpcion">
+                            
+                            <label for="persianas">Arreglo de persianas</label>
+                            <input type="checkbox" name="option" id="persianas" />
+                        </div>
+                        <div class="contenido--cadaOpcion">
+                            <label for="portones">Arreglo de portones</label>
+                            <input type="checkbox" name="option" id="portones" />    
+                        </div>
+                    </div>
+            </div>
+            <div class="contenido_consultaFrm">
+                <div>
+                    <textarea rows="10" cols="50" placeholder="Escriba su consulta..." name="consulta" id="consulta" maxlength="400" required></textarea>
+                </div>
+                
+                <div class="contenido_botones">
+                    <input class="contenido--btnCon" type="reset" value="Limpiar">
+                    <input class="contenido--btnCon" type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+         <!-- MAPA -->
+    
+    </main>
+    <section >
+        <h2 class="contenido_tituloContacto">Ubicacion</h2>
+        <div class="contenido_ubicacion">
+            <div class="contenido_mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.323244671364!2d-58.56962658560744!3d-34.64653868044837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e8cf21938d%3A0x534559aa383dc47b!2sAvellaneda%20586%2C%20B1704BXL%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1640289486546!5m2!1ses!2sar" class="contenido-imgMapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contenido_txtUbicacion">
+                <div class="contenido--direccion">
+                    <h3>Direccion</h3>
+                    <p>Viamonte 50. Piso 4, depto. 7</p>
+                </div>
+                <div class="contenido--telefono">
+                    <h3>Telefono</h3>
+                    <p>1521742925</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <footer class="pie">
+        <!-- LOGO -->
+        <a href="../index.html" ><img src="../assets/imagenes/logo.PNG" alt="Logo de officium" class="pie_logo"></a>
+     
+        <ul class="pie_navegacion" >
+            <li><a  href="../index.html">Inicio</a></li>
+            <li><a  href="./conocenos.html">Conocenos</a></li>
+            <li><a  href="./galeria.html">Galeria</a></li>
+            <li><a  href="./tutoriales.html">Tutoriales</a></li>
+            <li><a  href="./contacto.html">Contacto</a></li>
+        </ul>
+    
+        <ul class="pie_Redes">
+            <li><a class="pie--iconoRedes" href="https://www.instagram.com/officium.ok/" target="_blanck"><i class="bi bi-instagram "></i></a></li>
+            <li><a class="pie--iconoRedes"  href="https://www.facebook.com/home.php" target="_blanck"><i class="bi bi-facebook "></i></a></li>
+            <li><a class="pie--iconoRedes" href="https://twitter.com/home" target="_blanck"><i class="bi bi-twitter "></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

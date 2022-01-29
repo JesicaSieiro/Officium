@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Mulish', sans-serif;
+    font-size: 20px;
+    background-color: (255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "contenido"
+    "contenido"
+    "contenido"
+    "pie";
+    min-height: 100vh;
+}
+
+a,ul{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* CABECERA */
+.cabecera{
+    grid-area: cabecera;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 4%;
+}
+.cabecera_menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cabecera_menu li{
+    padding-left: 2%;
+}
+/*Colores texto menu*/
+.cabecera-menuInicio{
+    color: rgb(202, 13, 13);
+    padding: 0.5rem;
+}
+.cabecera-menuInicio:hover{
+    text-decoration: underline; 
+}
+.cabecera-menuNosotros{
+    color: rgb(253, 97, 40);
+    padding: 0.5rem;
+}
+.cabecera-menuNosotros:hover{
+    text-decoration: underline;
+}
+.cabecera-menuGaleria{
+    color: rgb(236, 236, 5);
+    padding: 0.5rem;
+}
+.cabecera-menuGaleria:hover{
+    text-decoration: underline;
+    
+}
+.cabecera-menuTutoriales{
+    color: rgb(3, 122, 3);
+    padding: 0.5rem;
+}
+.cabecera-menuTutoriales:hover{
+    text-decoration: underline;
+}
+.cabecera-menuContacto{
+    color: rgb(8, 8, 168);
+    padding: 0.5rem;
+}
+.cabecera-menuContacto:hover{
+    text-decoration: underline;
+}
+/*fin Colores Menu*/
+
+
+.cabecera_logo,
+.pie_logo{
+    width: 300px;
+    padding: 0.5%;
+}
+/* FIN CABECERA */
+/* CONTENIDO */
+.contenido{
+    grid-area: contenido;
+    min-height: inherit;
+    padding: 0 2%;
+}
+/* INDEX */
+
+.contenidoIndex{
+    font-family:'Mulish', sans-serif;
+    font-size: 20px;
+    background-color: (255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "slider"
+    "servicios"
+    "servicios"
+    "servicios"
+    "pie";
+    min-height: 100vh; 
+}
+.contenido_servicios{
+    grid-area: servicios;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1%;
+    color: rgb(202, 13, 13);
+    border-bottom: 1px solid rgb(202, 13, 13) ;
+    min-height: 50vh;
+    
+}
+/* SLIDER */
+.contenido_slider{
+    grid-area: slider;
+    display: flex;
+    overflow-x: scroll;
+    min-height: 20vh;
+    background-color: rgba(202, 13, 13, 0.582);
+    margin-top: 2%;
+    
+}
+.contenido-imgSlider{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin: 2%;
+
+}
+/* FIN SLIDER */
+
+.contenido_tituloServicios{
+    color: rgb(202, 13, 13);
+    margin: 3% 0;
+  text-align: center;
+}
+.contenido_imagenServ{
+    
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin: 0 2%;
+    
+}
+.contenido-cadaImagen{
+    width: 150px;
+    padding: 5%;
+    border: 5px solid;
+    border-radius: 20%;
+}
+
+
+.contenido_textoServ{
+    align-items:center;
+    padding: 2% 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+.contenido--subtituloServ{
+    width: fit-content;
+    display: inline-block;
+}
+.contenido--textoServ{
+    display: inline-block;
+     width: content;
+}
+/* FIN INDEX */
+/* CONOCENOS */
+.contenidoConocenos{
+    font-family:'Mulish', sans-serif;
+    font-size: 20px;
+    background-color: (255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "proposito"
+    "proposito"
+    "empleados"
+    "empleados"
+    "pie";
+    min-height: 100vh; 
+}
+.contenido_tituloCon{
+    width: fit-content;
+    margin: auto;
+    padding: 1%;
+    color: rgba(253, 97, 40, 0.932);
+}
+.proposito{
+    grid-area: proposito;
+   
+}
+.contenido_propositoCon{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgb(253, 97, 40);
+    color: rgba(253, 97, 40, 0.932);
+}
+.contenido--imgGrupalCon{
+    padding: 0 2% 2% 0;
+    margin: auto;
+    object-fit: cover;
+}
+
+.contenido--txtPropositoCon{
+    width: 60%;
+}
+.empleados{
+    grid-area: empleados;
+}
+.contenido_empleadosCon{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+    width: 90%;
+    margin: auto;
+}
+.contenido_cadaEmp{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenido--fotoEmplCon{
+    width: 150px;
+    height: 150px;
+    margin: 1% 20%;
+    padding: 1%;
+    border: 1px solid rgb(253, 97, 40);
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.contenido--txtEmpleadoCon{
+
+    width: 70%;
+    height: 30%;
+    padding: 6% 2%;
+    border-radius: 2%;
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+    background-color: rgba(253, 97, 40, 0.932) ;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    z-index: 1;
+}
+/* FIN CONOCENOS */
+/*GALERIA*/
+
+.contenido_tituloGal{
+    width: fit-content;
+    margin: auto;
+    padding: 1%;
+    color: rgb(63, 62, 62);
+}
+
+.contenido_galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+.contenido_cadaImagenGal{
+    width: 50vh;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(236, 236, 5) ;
+    border-radius: 2%;
+    color: rgb(63, 62, 62);
+    padding: 2%;
+    margin: 2% ;
+    font-size: 15px;
+
+}
+
+.contenido-imgGal{
+    width: inherit;
+    max-width: 350px;
+    height: 300px;
+    margin: 1% 20%;
+    padding: 1%;
+    border-radius: 10%;
+    object-fit: cover;
+  
+}
+/*FIN GALERIA*/
+/*TUTORIALES*/
+.contenido_tituloTut{
+    width: fit-content;
+    margin: auto;
+    padding: 1%;
+    color:rgb(3, 122, 3);
+}
+
+.contenido_tutoriales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenido_cadaVideoTut{
+    width: 60vh;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: rgba(3, 122, 3, 0.774) ;
+    border-radius: 2%;
+    color: rgb(255,255,255);
+    padding: 2%;
+    margin: 2%;
+
+}
+.contenido-videoTut{
+    width: 100%;
+    height: 250px;
+    margin: 1% 20%;
+    object-fit: cover
+}
+/*FIN DE TUTORIALES*/
+/*CONTACTO*/
+.contenidoContacto{
+    font-family:'Mulish', sans-serif;
+    font-size: 20px;
+    background-color: (255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "formulario"
+    "formulario"
+    "formulario"
+    "mapa"
+    "pie";
+    min-height: 100vh; 
+}
+.formulario{
+    grid-area: formulario;
+}
+.contenido_tituloContacto{
+    width: fit-content;
+    margin: auto;
+    padding: 1%;
+    color:rgb(8, 8, 168);
+}
+.contenido_formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3%;
+    background-color: rgba(2, 2, 90, 0.466);
+    border-radius: 0.5%;
+    color: rgb(255, 255, 255);
+}
+
+form input, form textarea{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: none; 
+    font-size: 20px;
+    resize: none; 
+    font-family:'Mulish', sans-serif;
+  }
+
+.contenido_datosFrm{
+    /* width: 60vh; */
+    min-width: 40vh;
+    max-width: 80vh;
+    margin: 1%;
+}
+
+.contenido_consultaFrm{
+    min-width: 40vh;
+    max-width: 80vh;
+}
+
+.contenido_serviciosChk{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1%;
+    background-color: rgba(2, 2, 90, 0.466);
+    border-radius: 0.5%;
+    font-size: 15PX;
+    text-align: center;
+    margin: 1%;
+}
+
+.contenido--cadaOpcion{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    padding: 2%;
+}
+
+ .contenido_botones{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     width: 100%;
+ }
+
+ .contenido--btnCon{
+     width: 30%;
+     background: rgb(8, 8, 168);
+     color: rgb(255, 255, 255);
+     font-size: 18px;
+     border-radius: 2%;
+ }
+.contenido_ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2% 0;
+    background-color: rgb(8, 8, 168) ;
+    color: rgb(255, 255, 255);
+    min-height: 50vh;
+}
+.mapa{
+    grid-area: mapa;
+}
+.contenido_mapa{
+    
+    width: 60%;
+    min-height: 50vh;
+}
+.contenido-imgMapa{
+    min-height: 50vh;
+    width: 100%;
+}
+.contenido_txtUbicacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 50vh;
+
+}
+
+.contenido--direccion , .contenido--telefono{
+    padding: 10% 0;
+}
+/*FIN CONTACTO*/
+/* FIN CONTENIDO */
+/* FOOTER */
+.pie{
+    grid-area: pie;
+    background-color: rgb(63, 62, 62);
+    margin-top: 2%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.pie_navegacion{
+    text-align: center;
+    width: 20%;
+}
+
+.pie_navegacion li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.pie_Redes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.pie--iconoRedes  {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+
+}
+
+.pie--iconoRedes:hover,
+.pie_navegacion li a:hover {
+    color: rgb(155, 153, 153);
+}
+
+/* FIN FOOTER */
+
+@media (max-width: 780px){
+    .cabecera,
+    .cabecera_menu,
+    .pie{
+        display: inline-block;
+        text-align: center;
+        padding: 2%;
+    }
+
+    /* CABECERA */
+    .cabecera_logo{
+        display: block;
+        margin: auto;
+    }
+    /* FIN CABECERA */
+    
+    /* CONTENIDOS */
+
+    /* INDEX */
+    .contenido_slider {
+        width: 100vh;
+        margin: auto;
+    }
+    .contenido_textoServ
+    {
+        width: 100%;
+    }
+    /* FIN INDEX */
+
+    /* GALERIA */
+    .contenido_cadaImagenGal{
+        margin: 2% auto;
+    }
+    /* FIN GALERIA */
+
+    /* CONTACTO */
+    .contenido_mapa{
+        width: 90%;
+        
+    }
+    /* FIN CONTACTO */
+
+    /* FIN CONTENIDOS */
+
+    /* FOOTER */
+    .pie_Redes,
+    .pie_navegacion{
+        margin: auto;
+        padding: 2%;
+    }
+
+}
