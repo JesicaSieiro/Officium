@@ -294,9 +294,7 @@ li{
 }
 /* FIN CONOCENOS */
 /*GALERIA*/
-/* .cabecera{
-    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(247, 255, 172),rgb(255, 255, 255));
-} */
+
 .contenido_tituloGal{
     width: fit-content;
     margin: auto;
@@ -318,15 +316,20 @@ li{
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgb(236, 236, 5) ;
+    background-color: rgba(236, 236, 5, 0.699) ;
     border-radius: 2%;
     color: rgb(63, 62, 62);
-    padding: 2%;
+    padding: 0.5% 2%;
     margin: 2% ;
     font-size: 15px;
+    transition-duration: 1s;
 
 }
-
+.contenido_cadaImagenGal:hover{
+    transform: scale(1.2, 1.2);
+    z-index: 100;
+    box-shadow:  2px 2px 2px rgb(189, 188, 188);
+}
 .contenido-imgGal{
     width: inherit;
     max-width: 350px;
