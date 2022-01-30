@@ -32,7 +32,25 @@ li{
     flex-wrap: wrap;
     align-items: center;
     padding: 0 4%;
+    
 }
+/* FONDOS CABECERAS */
+.fondoMenuIndex{
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(249 230 230),rgb(255, 255, 255));
+}
+.fondoMenuConocenos{
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(251 236 196),rgb(255, 255, 255));
+}
+.fondoMenuGaleria{
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(253 251 168),rgb(255, 255, 255));
+}
+.fondoMenuTutoriales{
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(174 233 174 / 45%),rgb(255, 255, 255));
+}
+.fondoMenuContacto{
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(210 210 255 / 42%),rgb(255, 255, 255));
+}
+ /* FIN DE FONDOS PARA CABECERAS */
 .cabecera_menu{
     display: flex;
     justify-content: space-evenly;
@@ -50,21 +68,26 @@ li{
 .cabecera-menuInicio:hover{
     text-decoration: underline; 
 }
+
 .cabecera-menuNosotros{
     color: rgb(253, 97, 40);
     padding: 0.5rem;
 }
+
 .cabecera-menuNosotros:hover{
     text-decoration: underline;
 }
+
 .cabecera-menuGaleria{
     color: rgb(236, 236, 5);
     padding: 0.5rem;
+    text-shadow: 2px 2px 2px rgb(249 249 253);
 }
+
 .cabecera-menuGaleria:hover{
-    text-decoration: underline;
-    
+    text-decoration: underline;    
 }
+
 .cabecera-menuTutoriales{
     color: rgb(3, 122, 3);
     padding: 0.5rem;
@@ -89,6 +112,7 @@ li{
 }
 /* FIN CABECERA */
 /* CONTENIDO */
+/* se usa solo en galeria y tutoriales el resto se sobreescriben */
 .contenido{
     grid-area: contenido;
     min-height: inherit;
@@ -129,8 +153,8 @@ li{
     overflow-x: scroll;
     min-height: 20vh;
     background-color: rgba(202, 13, 13, 0.582);
-    margin-top: 2%;
-    
+    margin: 2%;
+
 }
 .contenido-imgSlider{
     height: 250px;
@@ -270,7 +294,9 @@ li{
 }
 /* FIN CONOCENOS */
 /*GALERIA*/
-
+/* .cabecera{
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(247, 255, 172),rgb(255, 255, 255));
+} */
 .contenido_tituloGal{
     width: fit-content;
     margin: auto;
