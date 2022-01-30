@@ -42,10 +42,10 @@ li{
     background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(251 236 196),rgb(255, 255, 255));
 }
 .fondoMenuGaleria{
-    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(253 251 168),rgb(255, 255, 255));
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(255, 254, 197),rgb(253 251 168),rgb(255 254 197),rgb(255, 255, 255));
 }
 .fondoMenuTutoriales{
-    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(174 233 174 / 45%),rgb(255, 255, 255));
+    background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(130 231 130 / 45%),rgb(255, 255, 255));
 }
 .fondoMenuContacto{
     background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(210 210 255 / 42%),rgb(255, 255, 255));
@@ -362,12 +362,19 @@ li{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    background-color: rgba(3, 122, 3, 0.774) ;
+    background-color: rgba(31, 128, 31, 0.774) ;
     border-radius: 2%;
+    font-size: 15px;
     color: rgb(255,255,255);
-    padding: 2%;
+    padding:1% ;
     margin: 2%;
+    transition-duration: 1s;
+}
 
+.contenido_cadaVideoTut:hover{
+    transform: scale(1.2, 1.2);
+    z-index: 100;
+    box-shadow:  2px 2px 2px rgb(189, 188, 188);
 }
 .contenido-videoTut{
     width: 100%;
