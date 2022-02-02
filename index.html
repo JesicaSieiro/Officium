@@ -10,88 +10,151 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styleNuevo.css">
 </head>
-<body class="contenidoIndex">
-    <header class="cabecera fondoMenuIndex">
-        <a href="./index.html"><img src="./assets/imagenes/logo/Logo Officium -letra fina-.png" alt="Logo de officium" class="cabecera_logo"></a>
-        <ul class="cabecera_menu">
-            <li><a href="./index.html" class="cabecera-menuInicio">Inicio</a></li>
-            <li><a href="./paginas/conocenos.html" class="cabecera-menuNosotros">Conocenos</a></li>
-            <li><a href="./paginas/galeria.html" class="cabecera-menuGaleria">Galeria</a></li>
-            <li><a href="./paginas/tutoriales.html" class="cabecera-menuTutoriales">Tutoriales</a></li>
-            <li><a href="./paginas/contacto.html" class="cabecera-menuContacto">Contacto</a></li>
-            
-        </ul>
+<body >
+    <header class="fondoMenuIndex">
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img src="./assets/imagenes/logo/Logo Officium -letra fina-.png" alt="Logo de officium" class="cabecera_logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class=" cabecera-menuInicio" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" cabecera-menuNosotros" href="./paginas/conocenos.html">Conocenos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class=" cabecera-menuGaleria" href="./paginas/galeria.html" >Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" cabecera-menuTutoriales" href="./paginas/tutoriales.html">Tutoriales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" cabecera-menuContacto" href="./paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
     </header>
-    <main >
+    <main class="container" >
         <!-- SLIDER -->
-        <article class="contenido_slider">
-            <img class="contenido-imgSlider" src="./assets/imagenes/index/slider/arreglo-porton.jpg" alt="Arreglo de porton">
+        <article class="row slider">
+
+            <!-- <img class="contenido-imgSlider" src="./assets/imagenes/index/slider/arreglo-porton.jpg" alt="Arreglo de porton">
             <img class="contenido-imgSlider" src="./assets/imagenes/index/slider/arrego-reja.jpg" alt="Arreglo de reja">
             <img class="contenido-imgSlider" src="./assets/imagenes/index/slider/cortina-interna.jpg" alt="Arreglo de cortina interna">
             <img class="contenido-imgSlider" src="./assets/imagenes/index/slider/cortinas-enrollables.jpg" alt="Arreglo de cortina enrollable">
-            <img class="contenido-imgSlider" src="./assets/imagenes/index/slider/home-cortinasenrollables.jpg" alt="Arreglo de cortina">    
+            <img class="contenido-imgSlider" src="./assets/imagenes/index/slider/home-cortinasenrollables.jpg" alt="Arreglo de cortina">    --> 
+            <div id="carouselExampleIndicators" class="carousel slide col-12 " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/imagenes/index/slider/arreglo-porton.jpg" class="d-block w-100 contenido-imgSlider" alt="Arreglo de porton">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imagenes/index/slider/arrego-reja.jpg" class="d-block w-100 contenido-imgSlider" alt="Arreglo de reja">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imagenes/index/slider/cortina-interna.jpg" class="d-block w-100 contenido-imgSlider" alt="Arreglo de cortina interna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imagenes/index/slider/cortinas-enrollables.jpg" class="d-block w-100 contenido-imgSlider" alt="Arreglo de cortina enrollable">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imagenes/index/slider/home-cortinasenrollables.jpg" class="d-block w-100 contenido-imgSlider" alt="Arreglo de cortina">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Proximo</span>
+                </button>
+              </div>
         </article>
         <h1 class="contenido_tituloServicios">Arreglamos tu casa!</h1>
         
-        <div class="contenido_servicios">
-            <div class="contenido_imagenServ">
-                <img src="./assets/imagenes/index/servicios/persianas.png" alt="Imagen de persiana" class="contenido-cadaImagen">
+        <div class="row contenido_servicios  mx-auto">
+            <div class="col-lg-4 col-md-12 col-sm-12 mx-auto cont_imagenServ">
+                <img src="./assets/imagenes/index/servicios/porton.png" alt="Imagen de persiana" class="contenido-cadaImagen mx-auto">
             </div>
-            <div class="contenido_textoServ">
-                <h2 class="contenido--subtituloServ">Persianas</h2>
-                <p class="contenido--textoServ">
-                    Arreglamos persianas de madera de todos los tamanos, con o sin motores. 
+            <div class="col-lg-8 col-md-12 mx-auto col-sm-12 ">
+                <h2 >Portones</h2>
+                <p >
+                    Arreglamos portones de madera de todos los tamanos, con o sin motores. 
                     Utilizamos repuestos originales para obtener un mejor resultado final. 
                     Y damos garamtia de 2 meses en caso de cualquier inconveniente. 
                 </p>
             </div>
         </div>
         
-        <div class="contenido_servicios">
+        <div class="row contenido_servicios  mx-auto">
             
-            <div class="contenido_textoServ">
-                <h2 class="contenido--subtituloServ">Pintura</h2>
-                <p class="contenido--textoServ">
+            <div class="col-lg-8 col-md-12 mx-auto col-sm-12">
+                <h2 >Pintura</h2>
+                <p >
                     Hacemos pintura tanto de interiores como exteriores, teniendo en cuenta el sitio para utilizar 
                     el material acorde para una mayor duracion del trabajo. 
                 </p>
             </div>
-            <div class="contenido_imagenServ">
-                <img src="./assets/imagenes/index/servicios/cubo-de-pintura.png" alt="Imagen de persiana" class="contenido-cadaImagen">
+            <div class="col-lg-4 col-md-12 col-sm-12 mx-auto  cont_imagenServ">
+                <img src="./assets/imagenes/index/servicios/cubo-de-pintura.png" alt="Imagen de persiana" class="contenido-cadaImagen mx-auto">
             </div>
         </div>
-        <div class="contenido_servicios">
-            <div class="contenido_imagenServ">
-                <img src="./assets/imagenes/index/servicios/persianas.png" alt="Imagen de persiana" class="contenido-cadaImagen">
+        <div class="row contenido_servicios  mx-auto">
+            <div class="col-lg-4 col-md-12 col-sm-12 mx-auto cont_imagenServ">
+                <img src="./assets/imagenes/index/servicios/persianas.png" alt="Imagen de persiana" class="contenido-cadaImagen mx-auto">
             </div>
-            <div class="contenido_textoServ">
-                <h2 class="contenido--subtituloServ">Portones</h2>
-                <p class="contenido--textoServ">
+            <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+                <h2>Persianas</h2>
+                <p >
                     Arreglamos persianas de madera de todos los tamaños, con o sin motores. Y trabajos con repuestos originales.
                 </p>
             </div>
         </div>
     </main>
-    <footer class="pie">
+    <footer class="container-fluid  pie">
          <!-- LOGO -->
-         <a href="./index.html" ><img src="./assets/imagenes/logo/Logo Officium -blanco letra fina-.png" alt="Logo de officium" class="pie_logo"></a>
-      
-         <ul class="pie_navegacion" >
-             <li><a  href="./index.html">Inicio</a></li>
-             <li><a  href="./paginas/conocenos.html">Conocenos</a></li>
-             <li><a  href="./paginas/galeria.html">Galeria</a></li>
-             <li><a  href="./paginas/tutoriales.html">Tutoriales</a></li>
-             <li><a  href="./paginas/contacto.html">Contacto</a></li>
-         </ul>
-     
-         <ul class="pie_Redes">
-             <li><a class="pie--iconoRedes" href="https://www.instagram.com/officium.ok/" target="_blanck"><i class="bi bi-instagram "></i></a></li>
-             <li><a class="pie--iconoRedes"  href="https://www.facebook.com/home.php" target="_blanck"><i class="bi bi-facebook "></i></a></li>
-             <li><a class="pie--iconoRedes" href="https://twitter.com/home" target="_blanck"><i class="bi bi-twitter "></i></a></li>
-         </ul>
+         <div class="row">
+            <a class="col-lg-4 col-md-12 col-sm-12  mx-auto" href="./index.html" ><img src="./assets/imagenes/logo/Logo Officium -blanco letra fina-.png" alt="Logo de officium" class="pie_logo"></a>
+         
+            <ul class="col-lg-4 col-md-4 col-sm-12  mx-auto pie_navegacion" >
+                <li><a  href="./index.html">Inicio</a></li>
+                <li><a  href="./paginas/conocenos.html">Conocenos</a></li>
+                <li><a  href="./paginas/galeria.html">Galeria</a></li>
+                <li><a  href="./paginas/tutoriales.html">Tutoriales</a></li>
+                <li><a  href="./paginas/contacto.html">Contacto</a></li>
+            </ul>
+            <div class="col-lg-4 col-md-12 col-sm-12  mx-auto">
+                <ul class="d-flex justify-content-evenly">
+                    <li><a class="pie--iconoRedes" href="https://www.instagram.com/officium.ok/" target="_blanck"><i class="bi bi-instagram "></i></a></li>
+                    <li><a class="pie--iconoRedes"  href="https://www.facebook.com/home.php" target="_blanck"><i class="bi bi-facebook "></i></a></li>
+                    <li><a class="pie--iconoRedes" href="https://twitter.com/home" target="_blanck"><i class="bi bi-twitter "></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+         
+        
  </footer>
-    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
