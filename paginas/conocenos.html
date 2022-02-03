@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- FUENTES DE GOOGLE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/style.css">
+  <!-- FUENTES DE GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/styleNuevo.css">
 </head>
-<body class="contenidoConocenos">
-    <header class="cabecera fondoMenuConocenos">
+<body >
+   <!--  <header class="cabecera fondoMenuConocenos">
         <a href="../index.html"><img src="../assets/imagenes/logo/Logo Officium -letra fina-.png" alt="Logo de officium" class="cabecera_logo"></a>
         <ul class="cabecera_menu">
             <li><a href="../index.html" class="cabecera-menuInicio">Inicio</a></li>
@@ -23,14 +24,47 @@
             <li><a href="./contacto.html" class="cabecera-menuContacto">Contacto</a></li>
             
         </ul>
-    </header>
-    <main >
-       <section class="proposito">
-            <h1 class="contenido_tituloCon">Conoce nuestro PROPOSITO</h1>
+    </header> -->
+    <header class="fondoMenuConocenos">
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img src="../assets/imagenes/logo/Logo Officium -letra fina-.png" alt="Logo de officium" class="cabecera_logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class=" cabecera-menuInicio" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" cabecera-menuNosotros" href="./conocenos.html">Conocenos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class=" cabecera-menuGaleria" href="./galeria.html" >Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" cabecera-menuTutoriales" href="./tutoriales.html">Tutoriales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" cabecera-menuContacto" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
                 
-            <div class="contenido_propositoCon">
-                <img src="../assets/imagenes/equipo.PNG" alt="Foto de los integrantes" class="contenido--imgGrupalCon">
-                <p class="contenido--txtPropositoCon">
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+       <section >
+            <h1 class=" contenido_tituloCon">Conoce nuestro PROPOSITO</h1>
+                
+            <div class="row contenido_propositoCon">
+                <img src="../assets/imagenes/equipo.PNG" alt="Foto de los integrantes" class="col-lg-6 col-md-12 col-sm-12 contenido--imgGrupalCon">
+                <p class="col-lg-6 col-md-12 col-sm-12 ">
                     Somos un equipo de profesionales capacitados en el oficio de arreglos de la casa como pintura (de interiores y exteriores),
                     arreglo de portones , cortinas y enrejados. Pero pereguimos el proposito de precticar la inclisuion de profesionales que son discriminados
                     por su condicion sexual. O sufran cualquier tipo de discriminacion. Ya que defendemos que la capacidad profesional de una profesional
@@ -38,10 +72,10 @@
                 </p>
             </div>
        </section>
-       <article class="empleados">
+       <article >
         <h2 class="contenido_tituloCon">Conocenos a cada uno</h2>
-        <div class="contenido_empleadosCon">
-            <div class="contenido_cadaEmp">
+        <div class="row mx-auto">
+            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto contenido_cadaEmp">
                 <img src="../assets/imagenes/empleados/empleado1.jpg" alt="Foto de empleado 1" class="contenido--fotoEmplCon">
                 <div class="contenido--txtEmpleadoCon">
                     <p >Nombre: Ignacio Sotomayor.</p>
@@ -50,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="contenido_cadaEmp">
+            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto contenido_cadaEmp">
                 <img src="../assets/imagenes/empleados/empleado2.jpg" alt="Foto de empleado 1" class="contenido--fotoEmplCon">
                 <div class="contenido--txtEmpleadoCon">
                     <p >Nombre: Ignacio Sotomayor.</p>
@@ -58,7 +92,7 @@
                     <p>Descripcion: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
                 </div>
             </div>
-            <div class="contenido_cadaEmp">
+            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto contenido_cadaEmp">
                 <img src="../assets/imagenes/empleados/empleado3.jpg" alt="Foto de empleado 1" class="contenido--fotoEmplCon">
                 <div class="contenido--txtEmpleadoCon">
                     <p >Nombre: Ignacio Sotomayor.</p>
@@ -66,7 +100,7 @@
                     <p>Descripcion: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
                 </div>
             </div>
-            <div class="contenido_cadaEmp">
+            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto contenido_cadaEmp">
                 <img src="../assets/imagenes/empleados/empleado4.jpg" alt="Foto de empleado 1" class="contenido--fotoEmplCon">
                 <div class="contenido--txtEmpleadoCon">
                     <p >Nombre: Ignacio Sotomayor.</p>
@@ -79,8 +113,8 @@
 
        </article>
     </main>
-    <footer class="pie">
-         <!-- LOGO -->
+   <!--  <footer class="pie">
+        
          <a href="../index.html" ><img src="../assets/imagenes/logo/Logo Officium -blanco letra fina-.png" alt="Logo de officium" class="pie_logo"></a>
       
          <ul class="pie_navegacion" >
@@ -96,7 +130,32 @@
              <li><a class="pie--iconoRedes"  href="https://www.facebook.com/home.php" target="_blanck"><i class="bi bi-facebook "></i></a></li>
              <li><a class="pie--iconoRedes" href="https://twitter.com/home" target="_blanck"><i class="bi bi-twitter "></i></a></li>
          </ul>
- </footer>
-    </footer>
+ </footer> -->
+ <footer class="container-fluid  pie">
+    <!-- LOGO -->
+    <div class="row">
+       <a class="col-lg-4 col-md-12 col-sm-12  mx-auto" href="./index.html" ><img src="../assets/imagenes/logo/Logo Officium -blanco letra fina-.png" alt="Logo de officium" class="pie_logo"></a>
+    
+       <ul class="col-lg-4 col-md-4 col-sm-12  mx-auto pie_navegacion" >
+           <li><a  href="../index.html">Inicio</a></li>
+           <li><a  href="./conocenos.html">Conocenos</a></li>
+           <li><a  href="./galeria.html">Galeria</a></li>
+           <li><a  href="./tutoriales.html">Tutoriales</a></li>
+           <li><a  href="./contacto.html">Contacto</a></li>
+       </ul>
+       <div class="col-lg-4 col-md-12 col-sm-12  mx-auto">
+           <ul class="d-flex justify-content-evenly">
+               <li><a class="pie--iconoRedes" href="https://www.instagram.com/officium.ok/" target="_blanck"><i class="bi bi-instagram "></i></a></li>
+               <li><a class="pie--iconoRedes"  href="https://www.facebook.com/home.php" target="_blanck"><i class="bi bi-facebook "></i></a></li>
+               <li><a class="pie--iconoRedes" href="https://twitter.com/home" target="_blanck"><i class="bi bi-twitter "></i></a></li>
+           </ul>
+       </div>
+   </div>
+   
+    
+   
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
