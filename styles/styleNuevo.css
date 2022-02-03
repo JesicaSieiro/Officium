@@ -46,6 +46,7 @@ li{
 }
 .cabecera-menuInicio:hover{
     text-decoration: underline; 
+    color: rgb(202, 13, 13);
 }
 
 .cabecera-menuNosotros{
@@ -56,6 +57,7 @@ li{
 
 .cabecera-menuNosotros:hover{
     text-decoration: underline;
+    color: rgb(253, 97, 40);
 }
 
 .cabecera-menuGaleria{
@@ -67,6 +69,9 @@ li{
 
 .cabecera-menuGaleria:hover{
     text-decoration: underline;    
+    color: rgb(236, 236, 5);
+    /* padding: 0.5rem 1rem; */
+    text-shadow: 2px 2px 2px rgb(249 249 253);
 }
 
 .cabecera-menuTutoriales{
@@ -76,6 +81,7 @@ li{
 }
 .cabecera-menuTutoriales:hover{
     text-decoration: underline;
+    color: rgb(3, 122, 3);
 }
 .cabecera-menuContacto{
     color: rgb(8, 8, 168);
@@ -84,6 +90,7 @@ li{
 }
 .cabecera-menuContacto:hover{
     text-decoration: underline;
+    color: rgb(8, 8, 168);
 }
 /*fin Colores Menu*/
 
