@@ -1,20 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 body{
     font-family:'Mulish', sans-serif;
     font-size: 20px;
     background-color: (255, 255, 255);
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "contenido"
-    "contenido"
-    "contenido"
-    "pie";
-    min-height: 100vh;
+
 }
 
 a,ul{
@@ -24,15 +14,11 @@ li{
     list-style: none;
 }
 /* CABECERA */
-.cabecera{
-    grid-area: cabecera;
-    min-height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
     align-items: center;
-    padding: 0 4%;
-    
+    justify-content: end;
 }
 /* FONDOS CABECERAS */
 .fondoMenuIndex{
@@ -51,56 +37,59 @@ li{
     background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(210 210 255 / 42%),rgb(255, 255, 255));
 }
  /* FIN DE FONDOS PARA CABECERAS */
-.cabecera_menu{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-.cabecera_menu li{
-    padding-left: 2%;
-}
 /*Colores texto menu*/
 .cabecera-menuInicio{
     color: rgb(202, 13, 13);
-    padding: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
 }
 .cabecera-menuInicio:hover{
     text-decoration: underline; 
+    color: rgb(202, 13, 13);
 }
 
 .cabecera-menuNosotros{
     color: rgb(253, 97, 40);
-    padding: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
 }
 
 .cabecera-menuNosotros:hover{
     text-decoration: underline;
+    color: rgb(253, 97, 40);
 }
 
 .cabecera-menuGaleria{
     color: rgb(236, 236, 5);
-    padding: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
     text-shadow: 2px 2px 2px rgb(249 249 253);
 }
 
 .cabecera-menuGaleria:hover{
     text-decoration: underline;    
+    color: rgb(236, 236, 5);
+    text-shadow: 2px 2px 2px rgb(249 249 253);
 }
 
 .cabecera-menuTutoriales{
     color: rgb(3, 122, 3);
-    padding: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
 }
 .cabecera-menuTutoriales:hover{
     text-decoration: underline;
+    color: rgb(3, 122, 3);
 }
 .cabecera-menuContacto{
     color: rgb(8, 8, 168);
-    padding: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
 }
 .cabecera-menuContacto:hover{
     text-decoration: underline;
+    color: rgb(8, 8, 168);
 }
 /*fin Colores Menu*/
 
@@ -112,50 +101,20 @@ li{
 }
 /* FIN CABECERA */
 /* CONTENIDO */
-/* se usa solo en galeria y tutoriales el resto se sobreescriben */
-.contenido{
-    grid-area: contenido;
-    min-height: inherit;
-    padding: 0 2%;
-}
+
 /* INDEX */
 
-.contenidoIndex{
-    font-family:'Mulish', sans-serif;
-    font-size: 20px;
-    background-color: (255, 255, 255);
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "slider"
-    "servicios"
-    "servicios"
-    "servicios"
-    "pie";
-    min-height: 100vh; 
-}
+
 .contenido_servicios{
-    grid-area: servicios;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
     margin: 1%;
     color: rgb(202, 13, 13);
     border-bottom: 1px solid rgb(202, 13, 13) ;
-    min-height: 50vh;
+    padding: 4% 0;
+    text-align: center;
     
 }
 /* SLIDER */
-.contenido_slider{
-    grid-area: slider;
-    display: flex;
-    overflow-x: scroll;
-    min-height: 20vh;
-    background-color: rgba(202, 13, 13, 0.582);
-    margin: 2%;
 
-}
 .contenido-imgSlider{
     height: 250px;
     width: 250px;
@@ -170,69 +129,29 @@ li{
     margin: 3% 0;
   text-align: center;
 }
-.contenido_imagenServ{
-    
-    object-fit: cover;
-    background-repeat: no-repeat;
-    margin: 0 2%;
+.cont_imagenServ{
+    padding:0 7%;
     
 }
 .contenido-cadaImagen{
     width: 150px;
-    padding: 5%;
+    padding: 2%;
     border: 5px solid;
     border-radius: 20%;
 }
 
 
-.contenido_textoServ{
-    align-items:center;
-    padding: 2% 0; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-}
-.contenido--subtituloServ{
-    width: fit-content;
-    display: inline-block;
-}
-.contenido--textoServ{
-    display: inline-block;
-     width: content;
-}
 /* FIN INDEX */
 /* CONOCENOS */
-.contenidoConocenos{
-    font-family:'Mulish', sans-serif;
-    font-size: 20px;
-    background-color: (255, 255, 255);
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "proposito"
-    "proposito"
-    "empleados"
-    "empleados"
-    "pie";
-    min-height: 100vh; 
-}
+
 .contenido_tituloCon{
     width: fit-content;
     margin: auto;
     padding: 1%;
     color: rgba(253, 97, 40, 0.932);
 }
-.proposito{
-    grid-area: proposito;
-   
-}
+
 .contenido_propositoCon{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin: 3%;
     padding-bottom: 3%;
     border-bottom: 1px solid rgb(253, 97, 40);
@@ -242,23 +161,11 @@ li{
     padding: 0 2% 2% 0;
     margin: auto;
     object-fit: cover;
+    max-width: 40%;
+    min-width: 300px;
 }
 
-.contenido--txtPropositoCon{
-    width: 60%;
-}
-.empleados{
-    grid-area: empleados;
-}
-.contenido_empleadosCon{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 3%;
-    width: 90%;
-    margin: auto;
-}
+
 .contenido_cadaEmp{
     align-items: center;
     display: flex;
@@ -268,9 +175,9 @@ li{
 }
 
 .contenido--fotoEmplCon{
-    width: 150px;
-    height: 150px;
-    margin: 1% 20%;
+    width: 200px;
+    height: 200px;
+    margin: 0 20%;
     padding: 1%;
     border: 1px solid rgb(253, 97, 40);
     border-radius: 50%;
@@ -280,9 +187,7 @@ li{
 
 .contenido--txtEmpleadoCon{
 
-    width: 70%;
-    height: 30%;
-    padding: 6% 2%;
+    padding:35px 10px 10px ;
     border-radius: 2%;
     font-size: 15px;
     position: relative;
@@ -293,6 +198,7 @@ li{
     z-index: 1;
 }
 /* FIN CONOCENOS */
+
 /*GALERIA*/
 
 .contenido_tituloGal{
@@ -303,26 +209,21 @@ li{
 }
 
 .contenido_galeria{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-bottom: 3%;
 }
 
 .contenido_cadaImagenGal{
-    width: 50vh;
+    
     align-items: center;
-    display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-evenly;
     background-color: rgba(236, 236, 5, 0.699) ;
-    border-radius: 2%;
     color: rgb(63, 62, 62);
-    padding: 0.5% 2%;
-    margin: 2% ;
-    font-size: 15px;
+    padding: 0.5%;
     transition-duration: 1s;
+    height: inherit;
+    margin: 2%;
+    width: 20rem;
 
 }
 .contenido_cadaImagenGal:hover{
@@ -330,17 +231,9 @@ li{
     z-index: 100;
     box-shadow:  2px 2px 2px rgb(189, 188, 188);
 }
-.contenido-imgGal{
-    width: inherit;
-    max-width: 350px;
-    height: 300px;
-    margin: 1% 20%;
-    padding: 1%;
-    border-radius: 10%;
-    object-fit: cover;
-  
-}
+
 /*FIN GALERIA*/
+
 /*TUTORIALES*/
 .contenido_tituloTut{
     width: fit-content;
@@ -350,18 +243,14 @@ li{
 }
 
 .contenido_tutoriales{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
 }
 
 .contenido_cadaVideoTut{
-    width: 60vh;
+    width: 20rem;
     align-items: center;
-    display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
     background-color: rgba(31, 128, 31, 0.774) ;
     border-radius: 2%;
     font-size: 15px;
@@ -384,23 +273,7 @@ li{
 }
 /*FIN DE TUTORIALES*/
 /*CONTACTO*/
-.contenidoContacto{
-    font-family:'Mulish', sans-serif;
-    font-size: 20px;
-    background-color: (255, 255, 255);
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "formulario"
-    "formulario"
-    "formulario"
-    "mapa"
-    "pie";
-    min-height: 100vh; 
-}
-.formulario{
-    grid-area: formulario;
-}
+
 .contenido_tituloContacto{
     width: fit-content;
     margin: auto;
@@ -408,10 +281,8 @@ li{
     color:rgb(8, 8, 168);
 }
 .contenido_formulario{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     padding: 3%;
     background-color: rgba(2, 2, 90, 0.466);
     border-radius: 0.5%;
@@ -510,22 +381,19 @@ form input, form textarea{
     padding: 10% 0;
 }
 /*FIN CONTACTO*/
-/* FIN CONTENIDO */
+
 /* FOOTER */
 .pie{
-    grid-area: pie;
     background-color: rgb(63, 62, 62);
     margin-top: 2%;
     padding: 2%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    text-align: center;  
 }
 
 
 .pie_navegacion{
     text-align: center;
-    width: 20%;
+
 }
 
 .pie_navegacion li a{
@@ -533,13 +401,7 @@ form input, form textarea{
     color: rgb(255, 255, 255);
 }
 
-.pie_Redes{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 30%;
-}
+
 
 .pie--iconoRedes  {
     text-decoration: none;
@@ -556,54 +418,22 @@ form input, form textarea{
 /* FIN FOOTER */
 
 @media (max-width: 780px){
-    .cabecera,
-    .cabecera_menu,
-    .pie{
-        display: inline-block;
-        text-align: center;
-        padding: 2%;
+   
+    .cont_imagenServ{
+        width: fit-content;    
     }
-
-    /* CABECERA */
-    .cabecera_logo{
-        display: block;
-        margin: auto;
-    }
-    /* FIN CABECERA */
-    
-    /* CONTENIDOS */
-
-    /* INDEX */
-    .contenido_slider {
-        width: 100vh;
-        margin: auto;
-    }
-    .contenido_textoServ
-    {
-        width: 100%;
-    }
-    /* FIN INDEX */
-
-    /* GALERIA */
-    .contenido_cadaImagenGal{
-        margin: 2% auto;
-    }
-    /* FIN GALERIA */
 
     /* CONTACTO */
     .contenido_mapa{
         width: 90%;
         
     }
-    /* FIN CONTACTO */
+    
 
-    /* FIN CONTENIDOS */
-
-    /* FOOTER */
-    .pie_Redes,
-    .pie_navegacion{
-        margin: auto;
-        padding: 2%;
+}
+@media (max-width:320px){
+    .contenido--txtEmpleadoCon{
+        width: inherit;
+        overflow-x: scroll;
     }
-
 }
