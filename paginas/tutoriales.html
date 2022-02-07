@@ -52,51 +52,150 @@
         <h2 class="contenido_tituloTut">Tutoriales</h2>
         <!--VIDEOS-->
         <section class="d-flex justify-content-evenly contenido_tutoriales" >
-           
-            <div class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
+      
+            <div type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
                 <video class="card-img-top contenido-videoTut" controls poster="../assets/imagenes/logo.PNG">
-                    <source src="../assets/videos/officium.ok-PINTURA.mp4" type="video/mp4">
+                    <source  src="../assets/videos/officium.ok-PINTURA.mp4" type="video/mp4">
                 </video>
-                <div class="card-body">
-                    <h3>Pintura de Interiores</h3>
-                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, vel. 
-                    Quam deleniti debitis pariatur odio incidunt? Unde libero quae </p>
+                <div class="card-body contenido_txtVideo">
+                    <h4>Pintura de Interiores</h4>
+                    <p class="card-text ">
+                      En este trabajo se dio tratamiento a una pared con humedad, 
+                      se coloco reboque y enduido en los lugares; y finalmete se pinto la habitacion.  
+                    </p>
                 </div>
             </div>
-
-            <div class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
-                <video class="card-img-top contenido-videoTut" controls poster="../assets/imagenes/logo.PNG">
-                    <source src="../assets/videos/officium.ok_pinturaBano.mp4" type="video/mp4">
-                </video>
-                <div class="card-body">
-                    <h3>Pintura de Baño</h3>
-                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, vel. 
-                    Quam deleniti debitis pariatur odio incidunt? Unde libero quae </p>
+            <!-- MODAL -->
+            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content ">
+                  <div class="modal-header tituloModalTut">
+                    <h5 class="modal-title" id="staticBackdropLabel">Pintura de Interiores</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body fondoModalTut">
+                    <video class="modal_video"controls poster="../assets/imagenes/logo.PNG">
+                      <source src="../assets/videos/officium.ok-PINTURA.mp4" type="video/mp4">
+                    </video>
+                    <p class="card-text">
+                      En este trabajo se dio tratamiento a una pared con humedad, 
+                      se coloco reboque y enduido en los lugares; y finalmete se pinto la habitacion.  
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
 
-            <div class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
-                <video class="card-img-top contenido-videoTut" controls poster="../assets/imagenes/logo.PNG">
-                    <source src="../assets/videos/officium.ok_arregloPileta.mp4" type="video/mp4">
+            <div type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
+                <video class="card-img-top contenido-videoTut"  controls poster="../assets/imagenes/logo.PNG">
+                    <source  src="../assets/videos/officium.ok_pinturaBano.mp4" type="video/mp4">
                 </video>
-                <div class="card-body">
-                    <h3>Arreglo de pileta</h3>
-                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, vel. 
-                    Quam deleniti debitis pariatur odio incidunt? Unde libero quae </p>
+                <div class="card-body contenido_txtVideo">
+                    <h4>Pintura de Baño</h4>
+                    
+                    <p class="card-text ">
+                      Video que muestra el arreglo completo de un baño. Se debio quitar el empapelado, 
+                      lijar, colocar enduido y luigo pintar la habitacion completa.  
+                    </p>
                 </div>
             </div>
+            <!-- MODAL -->
+            <div class="modal fade " id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content ">
+                  <div class="modal-header tituloModalTut">
+                    <h5 class="modal-title" id="staticBackdropLabel">Pintura de Baño</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body fondoModalTut">
+                    <video class="modal_video" controls poster="../assets/imagenes/logo.PNG">
+                      <source src="../assets/videos/officium.ok_pinturaBano.mp4" type="video/mp4">
+                    </video>
+                    <p class="card-text">
+                      Video que muestra el arreglo completo de un baño. Se debio quitar el empapelado, 
+                      lijar, colocar enduido y luigo pintar la habitacion completa.  
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
+              <video class="card-img-top contenido-videoTut" controls poster="../assets/imagenes/logo.PNG">
+                  <source  src="../assets/videos/officium.ok_arregloPileta.mp4" type="video/mp4">
+              </video>
+              <div class="card-body contenido_txtVideo">
+                  <h4>Arreglo de jacuzzi exterior</h4>
+                  
+                  <p class="card-text ">
+                    Este fue un arreglo de jacuzzi exterior, en el como 
+                    primer paso se lijaron las irregularidades, kuego se coloco enduido 
+                    y finalmente se aplico pintura para pileta para que mantenga la calidad por mas tiempo.
+                  </p>
+              </div>
+          </div>
+          <!-- MODAL -->
+          <div class="modal fade " id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content ">
+                <div class="modal-header tituloModalTut">
+                  <h5 class="modal-title" id="staticBackdropLabel">Arreglo de jacuzzi exterior</h5>
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fondoModalTut">
+                  <video class="modal_video" controls poster="../assets/imagenes/logo.PNG">
+                    <source  src="../assets/videos/officium.ok_arregloPileta.mp4" type="video/mp4">
+                  </video>
+                  <p class="card-text">
+                    Este fue un arreglo de jacuzzi exterior, en el como 
+                    primer paso se lijaron las irregularidades, kuego se coloco enduido 
+                    y finalmente se aplico pintura para pileta para que mantenga la calidad por mas tiempo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <div class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
-                <video class="card-img-top contenido-videoTut" controls poster="../assets/imagenes/logo.PNG">
+            <div type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" class=" card d-flex justify-content-evenly flex-column contenido_cadaVideoTut" >
+              <video class="card-img-top contenido-videoTut" controls  poster="../assets/imagenes/logo.PNG">
+                  <source  src="../assets/videos/officium.ok_Persiana.mp4" type="video/mp4">
+              </video>
+              <div class="card-body contenido_txtVideo">
+                  <h4>Arreglo de Persiana enrollable de madera</h4>
+                  
+                  <p class="card-text ">
+                    Se realizo el arreglo de una persiana enrollable de madera en el cual se repusieron las 
+                    varillas de maderas percutidas con repuestos originales de marca. Tambien se cambio
+                    la Polea de acero (con reductor). 
+                  </p>
+              </div>
+          </div>
+          <!-- MODAL -->
+          <div class="modal fade " id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content ">
+                <div class="modal-header tituloModalTut">
+                  <h5 class="modal-title" id="staticBackdropLabel">Arreglo de Persiana enrollable de madera</h5>
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fondoModalTut">
+                  <video class="modal_video" controls poster="../assets/imagenes/logo.PNG">
                     <source src="../assets/videos/officium.ok_Persiana.mp4" type="video/mp4">
-                </video>
-                <div class="card-body">
-                    <h3>Arreglo de Persiana</h3>
-                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, vel. 
-                    Quam deleniti debitis pariatur odio incidunt? Unde libero quae </p>
+                  </video>
+                  <p class="card-text">
+                    Se realizo el arreglo de una persiana enrollable de madera en el cual se repusieron las 
+                    varillas de maderas percutidas con repuestos originales de marca. Tambien se cambio
+                    la Polea de acero (con reductor).  
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
+          
 
         </section>
     </main>
