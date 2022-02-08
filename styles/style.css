@@ -311,6 +311,10 @@ li{
     flex-wrap: wrap;
     padding-bottom: 3%;
 }
+.card_imgGal{
+    height: 230px;
+    object-fit: cover;
+}
 
 .contenido_cadaImagenGal{
     
@@ -577,6 +581,41 @@ form input, form textarea{
         width: fit-content;    
     }
 
+    .carousel--imgServ{
+        object-fit: cover;
+        height: 360px;
+    }
+    
+    .carousel {
+        margin-top: 30px;
+    }
+
+    .contenido_txtSobreDer,
+    .contenido_txtSobreIzq {
+        transform: translate(0px, 15px);
+    }
+
+    @keyframes ingresoDer {
+        0% {
+            transform: translateZ(700px) translateY(300px) translateX(400px);
+            opacity: 0;
+        }
+        100% {
+                transform: translate(0px, 15px);
+                opacity: 1;
+        }
+    }
+    @keyframes ingresoIzq {
+        0% {
+            transform: translateZ(700px) translateY(300px) translateX(-400px);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0px, 15px);
+            opacity: 1;
+        }
+    }
+
     /* TUTORIALES */
     .modal_video{
         height: auto;
@@ -586,12 +625,18 @@ form input, form textarea{
         width: 90%;
         
     }
+
+    
     
 
 }
-@media (max-width:320px){
+@media (max-width:425px){
     .contenido--txtEmpleadoCon{
         width: inherit;
         overflow-x: scroll;
+    }
+
+    #container_slider{
+        display: none;
     }
 }
