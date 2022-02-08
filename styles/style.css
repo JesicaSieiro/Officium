@@ -107,25 +107,18 @@ li{
 
 .contenido_servicios{
     margin: 1%;
-    /* color: rgb(202, 13, 13); */
     color: rgb(88, 88, 88);
     border-bottom: 1px solid rgb(202, 13, 13) ;
     padding: 4% 0;
-    /* text-align: center; */
     font-size: 16px;
     background-color: rgb(255,255,255);
     
 }
 
-/* .contenido_servicios:hover{
-    background-color:rgba(202, 13, 13, 0.507); 
-    color: rgb(255,255,255);
-} */
 /* SLIDER */
 
 .contenido-imgSlider{
     height: 400px;
-    /* width: 250px; */
     object-fit: cover;
     margin: 2%;
 
@@ -135,9 +128,9 @@ li{
 .contenido_tituloServicios{
     color: rgb(202, 13, 13);
     margin: 3% 0;
-  text-align: center;
-  text-decoration: underline;
-  text-underline-position: under; 
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under; 
 }
 .contenido--tituloCadaServ{
     text-decoration: underline rgb(202, 13, 13) 3px solid;
@@ -145,26 +138,20 @@ li{
     text-underline-position: under; 
 }
 .cont_imagenServ{
-    /* padding:0 7%; */
     margin: auto;
 }
 
 .contenido-cadaImagen{
-/*     width: 300px;
-    padding: 2%; */
     border: 2px solid rgb(202, 13, 13);
     box-shadow: 2px 2px 2px rgb(189 188 188);
-   /*  border-radius: 20%; */
+
 }
 .contenido--imgServ{
     height: 360px;
     object-fit: cover;
 }
 .contenido--txtServDer{
-
     animation: ingresoDer 1s;
-/*    visibility: hidden; */
- 
 }
 .contenido_txtSobreDer{
     transform: translate(-50px, 15px);
@@ -206,12 +193,6 @@ li{
         opacity: 1;
     }
 }
-/* .contenido_servicios
-:hover ~ .contenido--txtServDer{
-    visibility: visible;
-    animation: ingresoDer 1s;
-    animation-fill-mode: forwards;
-} */
 /* FIN INDEX */
 /* CONOCENOS */
 
@@ -231,12 +212,14 @@ li{
     color: rgb(63, 62, 62);
 }
 .contenido--imgGrupalCon{
-    padding: 0 2% 2% 0;
+    padding: .5%;
     margin: auto;
     object-fit: cover;
     max-width: 40%;
     min-width: 300px;
+    border: 1px solid rgb(253, 97, 40);
 }
+
 
 
 .contenido_cadaEmp{
@@ -245,28 +228,19 @@ li{
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-evenly;
-    /* background-color: rgb(255,255,255); */
     transition: 1s linear;
-    /* transition-duration: 1s; */
 }
 
 .contenido_cadaEmp:hover{
     transform: scale(1.2, 1.2);
     z-index: 100;
-    /* background-color: rgb(253, 97, 40); */
 }
 .contenido_cadaEmp:hover .contenido--txtEmpleadoCon{
-    /* transform: scale(1.2, 1.2);
-    z-index: 100; */
-    /* box-shadow:  2px 2px 2px rgb(189, 188, 188); */
     background: rgb(253, 97, 40);
     color: rgb(255, 255, 255);
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-
 }
-
-
 
 .contenido--fotoEmplCon{
     width: 200px;
@@ -287,12 +261,13 @@ li{
     font-size: 15px;
     position: relative;
     top: -30px;
-    /* background-color: rgba(253, 97, 40, 0.932) ;
-    color: rgb(255, 255, 255); */
     border: 2px solid  rgba(253, 97, 40, 0.932) ;
     color: rgb(63, 62, 62);
     font-weight: 600;
     z-index: 1;
+    height: 200px;
+    width: 90%;
+    overflow-y: scroll;
 }
 /* FIN CONOCENOS */
 
@@ -323,7 +298,6 @@ li{
     background-color: rgb(255, 255, 255) ;
     color: rgb(63, 62, 62);
     padding: 0.5%;
-    /* transition-duration: 1s; */
     height: inherit;
     margin: 2%;
     width: 20rem;
@@ -358,16 +332,13 @@ li{
     width: 20rem;
     align-items: center;
     flex-wrap: nowrap;
-    /* background-color: rgba(31, 128, 31, 0.774) ; */
     border: 2px solid rgb(3, 122, 3);
     border-radius: 2%;
     font-size: 15px;
-    /* color: rgb(255,255,255); */
     background-color: rgb(255, 255, 255) ;
     color: rgb(3, 122, 3);
     padding:1% ;
     margin: 2%;
-    /* transition-duration: 1s; */
 }
 
 .contenido_cadaVideoTut:hover{
@@ -380,15 +351,10 @@ li{
 }
 
 .contenido-videoTut{
-    /* width: 100%; */
-    /* height: 250px; */
     margin: 1% 20%;
     border-radius: 2%;
     border-bottom: 2px solid rgb(3, 122, 3);
 }
-/* .contenido_cadaVideoTut:hover .contenido-videoTut{
-    border-bottom: 2px solid rgb(255, 255, 255);
-} */
 .contenido_txtVideo{
     height: 200px;
     overflow-y: scroll;
@@ -398,19 +364,16 @@ li{
     height: 400px;
 }
 .fondoModalTut{
-   /*  height: 302px; */
     color: rgb(255, 255, 255);
     background-color: rgb(3, 122, 3);
 }
 .tituloModalTut{
     color: rgb(3, 122, 3);
-    /* text-align: center; */
 }
 /* ESTILO PARA SCROLL */
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
-
   }
   
   /* Track */
@@ -421,13 +384,11 @@ li{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgb(27, 37, 27);
-   
-
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(186, 252, 186);
+    background: rgb(243, 250, 243);
   }
 /*FIN DE TUTORIALES*/
 /*CONTACTO*/
@@ -459,7 +420,6 @@ form input, form textarea{
   }
 
 .contenido_datosFrm{
-    /* width: 60vh; */
     min-width: 40vh;
     max-width: 80vh;
     margin: 1%;
