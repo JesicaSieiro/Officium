@@ -150,15 +150,16 @@ li{
     height: 360px;
     object-fit: cover;
 }
-.contenido--txtServDer{
+/* .contenido--txtServDer{
     animation: ingresoDer 1s;
-}
+} */
 .contenido_txtSobreDer{
     transform: translate(-50px, 15px);
     background: rgb(255 255 255);
     border: solid 2px;
     padding: 2%;
     box-shadow: 2px 2px 2px rgb(189 188 188);
+    animation: ingresoDer 1s;
 }
 
 .contenido_txtSobreIzq{
@@ -168,11 +169,12 @@ li{
     padding: 2%;
     box-shadow: 2px 2px 2px rgb(189 188 188);
     z-index: 10;
+    animation: ingresoIzq 1s;
 }
-.contenido--txtServIzq{
+/* .contenido--txtServIzq{
     animation: ingresoIzq 1s;
  
-}
+} */
 @keyframes ingresoDer {
     0% {
         transform: translateZ(700px) translateY(300px) translateX(400px);

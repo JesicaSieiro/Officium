@@ -1,0 +1,37 @@
+.pie{
+    background-color: $colorFooter;
+    margin-top: 2%;
+    padding: 2%;
+    text-align: center;  
+
+    .pie_logo{
+        width: 300px;
+        padding: 0.5%;
+    }
+
+    .pie_navegacion{
+        text-align: center;
+        li{
+            a{
+                text-decoration: none;
+                color: $fondoClaro;
+
+                &:hover {
+                    color: $colorRedes;
+                }
+            }
+        }
+    }
+
+    .pie--iconoRedes  {
+        text-decoration: none;
+        color: $fondoClaro;
+        font-size: 30px;
+
+        &:hover {
+            color: $colorRedes;
+        }
+    
+    }
+    
+}
