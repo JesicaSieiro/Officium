@@ -1,0 +1,76 @@
+.contenido_tituloCon{
+    @include tituloPrincipal($colorPrimarioNosotros);
+}
+
+.contenido_propositoCon{
+    margin: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid $colorPrimarioNosotros;
+    color: $colorSecundario;
+
+    &--imgGrupalCon{
+        padding: .5%;
+        margin: auto;
+        object-fit: cover;
+        max-width: 40%;
+        min-width: 300px;
+        border: 1px solid $colorPrimarioNosotros;
+    }
+}
+
+.contenido_cadaEmp{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 1s linear;
+
+    &:hover{
+        transform: scale(1.2, 1.2);
+        z-index: 100;
+        /* @extend %sombraConocenos; */
+    }
+    &:hover .contenido--txtEmpleadoCon{
+        
+       /*  @extend %sombraConocenos ;*/
+       @include fondoAnimacion($colorPrimarioNosotros)
+    }
+
+    .contenido--fotoEmplCon{
+        width: 200px;
+        height: 200px;
+        margin: 0 20%;
+        padding: 1%;
+        border: 1px solid $colorPrimarioNosotros;
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 10;
+        background-color: $fondoClaro;
+        
+    }
+
+    .contenido--txtEmpleadoCon{
+
+        padding:35px 10px 10px ;
+        border-radius: 2%;
+        font-size: 15px;
+        position: relative;
+        top: -30px;
+        border: 2px solid  $colorPrimarioNosotros ;
+        color: $colorSecundario;
+        font-weight: 600;
+        z-index: 1;
+        height: 200px;
+        width: 90%;
+        overflow-y: scroll;
+        /* &:hover{
+            @extend %sombraConocenos;
+        } */
+    }
+}
+
+
+
+
+

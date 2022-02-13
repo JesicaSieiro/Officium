@@ -1,8 +1,8 @@
 /* CABECERA */
 
 /* FONDOS CABECERAS */
-.fondoMenuIndex{
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.61),rgb(249, 230, 230),rgb(255, 255, 255));
+/* .fondoMenuIndex{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.61),rgb(249, 230, 230),rgb(255, 255, 255)); */
 
         .cabecera_logo{
             width: 300px;
@@ -17,66 +17,28 @@
         }
     
         /*Colores texto menu*/
-        .cabecera-menuInicio{
-            color: $colorPrimarioIndex;
-            display: block;
-            padding: 0.5rem 1rem;
-    
-            &:hover{
-                text-decoration: underline; 
-                color: $colorPrimarioIndex;
+        /* MAPA */
+        $coloresMenu:(
+            menuInicio:$colorPrimarioIndex,
+            menuNosotros:$colorPrimarioNosotros,
+            menuGaleria:$colorPrimarioGaleria,
+            menuTutoriales:$colorPrimarioTutoriales,
+            menuContacto:$colorPrimarioContacto
+        );
+
+        @each $itemMenu, $color in $coloresMenu{
+            .cabecera-#{$itemMenu}{
+                color:$color;
+                display: block;
+                padding: 0.5rem 1rem;
+                &:hover{
+                    text-decoration: underline; 
+                    color: $color;
+                }
             }
         }
-    
-    
-        .cabecera-menuNosotros{
-            color: $colorPrimarioNosotros;
-            display: block;
-            padding: 0.5rem 1rem;
-            &:hover{
-                text-decoration: underline;
-                color: $colorPrimarioNosotros;
-            }
-        }
-    
-        
-    
-        .cabecera-menuGaleria{
-            color: $colorPrimarioGaleria;
-            display: block;
-            padding: 0.5rem 1rem;
-            text-shadow: 2px 2px 2px rgb(249, 249, 253);
-    
-            &:hover{
-                text-decoration: underline;    
-                color: $colorPrimarioGaleria;
-                text-shadow: 2px 2px 2px rgb(249, 249, 253);
-            }
-        }
-    
-    
-        .cabecera-menuTutoriales{
-            color: $colorPrimarioTutoriales;
-            display: block;
-            padding: 0.5rem 1rem;
-    
-            &:hover{
-                text-decoration: underline;
-                color: $colorPrimarioTutoriales;
-            }
-        }
-    
-        .cabecera-menuContacto{
-            color: $colorPrimarioContacto;
-            display: block;
-            padding: 0.5rem 1rem;
-    
-            &:hover{
-                text-decoration: underline;
-                color: rgb(8, 8, 168);
-            }
-        }
+       
         /*fin Colores Menu*/
     
     
-}
+/* } */

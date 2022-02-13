@@ -1,0 +1,55 @@
+.contenido_tituloTut{
+    @include tituloPrincipal($colorPrimarioTutoriales);
+}
+
+.contenido_tutoriales{
+    flex-wrap: wrap;
+    align-items: center;
+
+    .contenido_cadaVideoTut{
+       /*  width: 20rem;
+        align-items: center;
+        flex-wrap: nowrap;
+        border: 2px solid $colorPrimarioTutoriales;
+        border-radius: 2%;
+        font-size: 15px;
+        background-color: $fondoClaro ;
+        color: $colorPrimarioTutoriales;
+        padding:1% ;
+        margin: 2%; */
+        @include contenidoImgVideo($colorPrimarioTutoriales, $colorPrimarioTutoriales);
+        &:hover{
+            /* transform: scale(1.2, 1.2);
+            z-index: 100;
+            @extend %sombra; */
+            @extend %animacionAgrandar;
+            background-color: $colorPrimarioTutoriales;
+            /* transition: 1s linear; */
+            color: $fondoClaro;
+        }
+    
+        .contenido-videoTut{
+            margin: 1% 20%;
+            border-radius: 2%;
+            border-bottom: 2px solid $colorPrimarioTutoriales;
+        }
+        .contenido_txtVideo{
+            height: 200px;
+            overflow-y: scroll;
+        }
+    }
+    
+    
+    .fondoModalTut{
+        color: $fondoClaro;
+        background-color: $colorPrimarioTutoriales;
+        &_video{
+            width: -webkit-fill-available;
+            height: 400px;
+        }
+    }
+    .tituloModalTut{
+        color:$colorPrimarioTutoriales;
+    }
+}
+

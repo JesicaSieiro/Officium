@@ -1,3 +1,16 @@
+/* extend */
+.contenido_galeria .contenido_cadaImagenGal:hover, .contenido_tutoriales .contenido_cadaVideoTut:hover, .contenido_cadaEmp:hover .contenido--txtEmpleadoCon {
+  /*  background: $colorPrimarioNosotros;
+    color: $fondoClaro; */
+  -webkit-box-shadow: 10px 10px 14px 2px #8a8989;
+  box-shadow: 10px 10px 14px 2px #8a8989; }
+
+.contenido_galeria .contenido_cadaImagenGal:hover, .contenido_tutoriales .contenido_cadaVideoTut:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 100;
+  transition: 0.3s linear; }
+
+/* mixin */
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
@@ -17,9 +30,15 @@ li {
 
 /* servicios */
 .contenido_tituloServicios {
+  /*  color: $colorPrimarioIndex;
+    margin: 3% 0;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;  */
+  width: fit-content;
+  margin: auto;
+  padding: 1%;
   color: #ca0d0d;
-  margin: 3% 0;
-  text-align: center;
   text-decoration: underline;
   text-underline-position: under; }
 
@@ -131,56 +150,62 @@ li {
 
 /* CABECERA */
 /* FONDOS CABECERAS */
-.fondoMenuIndex {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.61), #f9e6e6, white);
-  /*Colores texto menu*/
-  /*fin Colores Menu*/ }
-  .fondoMenuIndex .cabecera_logo {
-    width: 300px;
-    padding: 0.5%; }
-  .fondoMenuIndex .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 0;
-    align-items: center;
-    justify-content: end; }
-  .fondoMenuIndex .cabecera-menuInicio {
-    color: #ca0d0d;
-    display: block;
-    padding: 0.5rem 1rem; }
-    .fondoMenuIndex .cabecera-menuInicio:hover {
-      text-decoration: underline;
-      color: #ca0d0d; }
-  .fondoMenuIndex .cabecera-menuNosotros {
-    color: #fd6128;
-    display: block;
-    padding: 0.5rem 1rem; }
-    .fondoMenuIndex .cabecera-menuNosotros:hover {
-      text-decoration: underline;
-      color: #fd6128; }
-  .fondoMenuIndex .cabecera-menuGaleria {
-    color: #ecec05;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-shadow: 2px 2px 2px #f9f9fd; }
-    .fondoMenuIndex .cabecera-menuGaleria:hover {
-      text-decoration: underline;
-      color: #ecec05;
-      text-shadow: 2px 2px 2px #f9f9fd; }
-  .fondoMenuIndex .cabecera-menuTutoriales {
-    color: #037a03;
-    display: block;
-    padding: 0.5rem 1rem; }
-    .fondoMenuIndex .cabecera-menuTutoriales:hover {
-      text-decoration: underline;
-      color: #037a03; }
-  .fondoMenuIndex .cabecera-menuContacto {
-    color: #0808a8;
-    display: block;
-    padding: 0.5rem 1rem; }
-    .fondoMenuIndex .cabecera-menuContacto:hover {
-      text-decoration: underline;
-      color: #0808a8; }
+/* .fondoMenuIndex{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.61),rgb(249, 230, 230),rgb(255, 255, 255)); */
+.cabecera_logo {
+  width: 300px;
+  padding: 0.5%; }
 
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: end; }
+
+/*Colores texto menu*/
+/* MAPA */
+.cabecera-menuInicio {
+  color: #ca0d0d;
+  display: block;
+  padding: 0.5rem 1rem; }
+  .cabecera-menuInicio:hover {
+    text-decoration: underline;
+    color: #ca0d0d; }
+
+.cabecera-menuNosotros {
+  color: #fd6128;
+  display: block;
+  padding: 0.5rem 1rem; }
+  .cabecera-menuNosotros:hover {
+    text-decoration: underline;
+    color: #fd6128; }
+
+.cabecera-menuGaleria {
+  color: #ecec05;
+  display: block;
+  padding: 0.5rem 1rem; }
+  .cabecera-menuGaleria:hover {
+    text-decoration: underline;
+    color: #ecec05; }
+
+.cabecera-menuTutoriales {
+  color: #037a03;
+  display: block;
+  padding: 0.5rem 1rem; }
+  .cabecera-menuTutoriales:hover {
+    text-decoration: underline;
+    color: #037a03; }
+
+.cabecera-menuContacto {
+  color: #0808a8;
+  display: block;
+  padding: 0.5rem 1rem; }
+  .cabecera-menuContacto:hover {
+    text-decoration: underline;
+    color: #0808a8; }
+
+/*fin Colores Menu*/
+/* } */
 .pie {
   background-color: #3f3e3e;
   margin-top: 2%;
@@ -202,3 +227,161 @@ li {
     font-size: 30px; }
     .pie .pie--iconoRedes:hover {
       color: #9b9999; }
+
+.contenido_tituloCon {
+  width: fit-content;
+  margin: auto;
+  padding: 1%;
+  color: #fd6128;
+  text-decoration: underline;
+  text-underline-position: under; }
+
+.contenido_propositoCon {
+  margin: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #fd6128;
+  color: #585858; }
+  .contenido_propositoCon--imgGrupalCon {
+    padding: .5%;
+    margin: auto;
+    object-fit: cover;
+    max-width: 40%;
+    min-width: 300px;
+    border: 1px solid #fd6128; }
+
+.contenido_cadaEmp {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: 1s linear; }
+  .contenido_cadaEmp:hover {
+    transform: scale(1.2, 1.2);
+    z-index: 100;
+    /* @extend %sombraConocenos; */ }
+  .contenido_cadaEmp:hover .contenido--txtEmpleadoCon {
+    /*  @extend %sombraConocenos ;*/
+    background: #fd6128;
+    color: white; }
+  .contenido_cadaEmp .contenido--fotoEmplCon {
+    width: 200px;
+    height: 200px;
+    margin: 0 20%;
+    padding: 1%;
+    border: 1px solid #fd6128;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 10;
+    background-color: white; }
+  .contenido_cadaEmp .contenido--txtEmpleadoCon {
+    padding: 35px 10px 10px;
+    border-radius: 2%;
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+    border: 2px solid #fd6128;
+    color: #585858;
+    font-weight: 600;
+    z-index: 1;
+    height: 200px;
+    width: 90%;
+    overflow-y: scroll;
+    /* &:hover{
+            @extend %sombraConocenos;
+        } */ }
+
+.contenido_tituloGal {
+  width: fit-content;
+  margin: auto;
+  padding: 1%;
+  color: #585858;
+  text-decoration: underline;
+  text-underline-position: under; }
+
+.contenido_galeria {
+  flex-wrap: wrap;
+  padding-bottom: 3%; }
+  .contenido_galeria .contenido_cadaImagenGal {
+    /*    align-items: center;
+        flex-wrap: nowrap;
+        background-color: $fondoClaro ;
+        color: $colorSecundario;
+        padding: 0.5%;
+        height: inherit;
+        margin: 2%;
+        width: 20rem;
+        border: 2px solid $colorPrimarioGaleria; */
+    width: 20rem;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 2px solid #ecec05;
+    border-radius: 2%;
+    font-size: 15px;
+    background-color: white;
+    color: #585858;
+    padding: 1%;
+    margin: 2%; }
+    .contenido_galeria .contenido_cadaImagenGal:hover {
+      /* transform: scale(1.2, 1.2);
+            z-index: 100; */
+      background-color: #ecec05;
+      /* transition: 1s linear; */ }
+    .contenido_galeria .contenido_cadaImagenGal .card_imgGal {
+      height: 230px;
+      object-fit: cover; }
+
+.contenido_tituloTut {
+  width: fit-content;
+  margin: auto;
+  padding: 1%;
+  color: #037a03;
+  text-decoration: underline;
+  text-underline-position: under; }
+
+.contenido_tutoriales {
+  flex-wrap: wrap;
+  align-items: center; }
+  .contenido_tutoriales .contenido_cadaVideoTut {
+    /*  width: 20rem;
+        align-items: center;
+        flex-wrap: nowrap;
+        border: 2px solid $colorPrimarioTutoriales;
+        border-radius: 2%;
+        font-size: 15px;
+        background-color: $fondoClaro ;
+        color: $colorPrimarioTutoriales;
+        padding:1% ;
+        margin: 2%; */
+    width: 20rem;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 2px solid #037a03;
+    border-radius: 2%;
+    font-size: 15px;
+    background-color: white;
+    color: #037a03;
+    padding: 1%;
+    margin: 2%; }
+    .contenido_tutoriales .contenido_cadaVideoTut:hover {
+      /* transform: scale(1.2, 1.2);
+            z-index: 100;
+            @extend %sombra; */
+      background-color: #037a03;
+      /* transition: 1s linear; */
+      color: white; }
+    .contenido_tutoriales .contenido_cadaVideoTut .contenido-videoTut {
+      margin: 1% 20%;
+      border-radius: 2%;
+      border-bottom: 2px solid #037a03; }
+    .contenido_tutoriales .contenido_cadaVideoTut .contenido_txtVideo {
+      height: 200px;
+      overflow-y: scroll; }
+  .contenido_tutoriales .fondoModalTut {
+    color: white;
+    background-color: #037a03; }
+    .contenido_tutoriales .fondoModalTut_video {
+      width: -webkit-fill-available;
+      height: 400px; }
+  .contenido_tutoriales .tituloModalTut {
+    color: #037a03; }

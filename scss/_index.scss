@@ -8,11 +8,12 @@
 }
 /* servicios */
 .contenido_tituloServicios{
-    color: $colorPrimarioIndex;
+   /*  color: $colorPrimarioIndex;
     margin: 3% 0;
     text-align: center;
     text-decoration: underline;
-    text-underline-position: under; 
+    text-underline-position: under;  */
+    @include tituloPrincipal($colorPrimarioIndex);
 }
 
 .contenido_servicios{
@@ -26,7 +27,7 @@
     /* carrusel de cada servicio */
     .contenido-cadaImagen{
         border: 2px solid $colorPrimarioIndex;
-        box-shadow: 2px 2px 2px $sombraCadaServicio;
+        box-shadow: 2px 2px 2px $colorSombra;
         .contenido--imgServ{
             height: 360px;
             object-fit: cover;
@@ -40,7 +41,7 @@
         background: $fondoClaro;
         border: solid 2px;
         padding: 2%;
-        box-shadow: 2px 2px 2px $sombraCadaServicio;
+        box-shadow: 2px 2px 2px $colorSombra;
         animation: ingresoDer 1s;
         .contenido--tituloCadaServ{
             text-decoration: underline $colorPrimarioIndex;
@@ -65,7 +66,7 @@
         background: $fondoClaro;
         border: solid 2px;
         padding: 2%;
-        box-shadow: 2px 2px 2px $sombraCadaServicio;
+        box-shadow: 2px 2px 2px $colorSombra;
         z-index: 10;
         animation: ingresoIzq 1s;
         .contenido--tituloCadaServ{
