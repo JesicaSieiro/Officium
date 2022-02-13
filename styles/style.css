@@ -400,6 +400,7 @@ li{
     margin: auto;
     padding: 1%;
     color:rgb(8, 8, 168);
+    margin-bottom: 3%;
 }
 .contenido_formulario{
     flex-wrap: wrap;
@@ -433,9 +434,9 @@ form input, form textarea{
 }
 
 .contenido_serviciosChk{
-    display: flex;
+   /*  display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     align-items: flex-start;
     padding: 1%;
     background-color: rgba(2, 2, 90, 0.466);
@@ -464,7 +465,7 @@ form input, form textarea{
      background: rgb(8, 8, 168);
      color: rgb(255, 255, 255);
      font-size: 18px;
-     border-radius: 2%;
+    /*  border-radius: 2%; */
  }
 .contenido_ubicacion{
     display: flex;
@@ -600,5 +601,13 @@ form input, form textarea{
 
     #container_slider{
         display: none;
+    }
+
+    .contenido_tituloContacto{
+        /* width: fit-content;
+        margin: auto;
+        padding: 1%;
+        color:rgb(8, 8, 168); */
+        margin-bottom: 7%;
     }
 }

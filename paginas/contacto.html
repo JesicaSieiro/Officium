@@ -51,46 +51,57 @@
     <main class="container-fluid">
         <h1 class="contenido_tituloContacto">Envianos tu consulta!</h1>
         <!-- FORMULARIO -->
-        <form class="d-flex justify-content-evenly contenido_formulario">
-            <div class="contenido_datosFrm">
-                
-                    <input type="text" name="nombre" id="nombre" maxlength="40" placeholder="Nombre" required>
-                
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido"  maxlength="40" required>
-               
-                    <input type="email" name="mail" id="mail" placeholder="Email"  maxlength="40" required>
-                
+        <form class=" row g-3 d-flex justify-content-evenly contenido_formulario">
+            <!-- <div class="contenido_datosFrm"> -->
+            <div class="col-md-6 col-sm-12 col-lg-6">    
+                   
+                      <div class="row g-2">
+                        <div class="col-md">
+                            <input type="text" class="form-control" id="nombre"  maxlength="40" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md">
+                                <input type="text" class="form-control" id="apellido"  maxlength="40" placeholder="Apellido" required>
+                        </div>
+                      </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control"  placeholder="name@example.com" maxlength="40"  required>
+                    </div>
+
                     <label >En que tipo de servicio estas interesado:</label>
-                    <div class="contenido_serviciosChk">
-                        <div class="contenido--cadaOpcion">
-                            <label for="PinturaInteriores">Pintura de interiores</label><br />
-                            <input type="checkbox" name="option" id="PinturaInteriores"  />
+                    <div class=" contenido_serviciosChk">
+                        <div class="row">
+                            <div class="form-check form-check-inline mb-3 mt-3 col-4 my-auto mx-auto">
+                                <input class="form-check-input  " type="checkbox" id="pinturaInteriores" value="pinturaInteriores">
+                                <label class="form-check-label mt-1 " for="pinturaInteriores">Pintura de interiores</label>
+                            </div>
+                              <div class="form-check form-check-inline mb-3 mt-3 col-4 my-auto mx-auto">
+                                <input class="form-check-input  " type="checkbox" id="pinturaExteriores" value="pinturaExteriores">
+                                <label class="form-check-label mt-1 " for="pinturaExteriores">Pintura de exteriores</label>
+                              </div>
                         </div>
-                        <div class="contenido--cadaOpcion">
-                            <label for="PinturaExteriores">Pintura de exteriores</label>
-                            <input type="checkbox" name="option" id="PinturaExteriores" />
+                        <div class="row">
+                            <div class="form-check form-check-inline mb-3 mt-3 col-4 my-auto mx-auto">
+                                <input class="form-check-input  " type="checkbox" id="persianas" value="persianas">
+                                <label class="form-check-label mt-1" for="persianas">Arreglo de persianas</label>
+                              </div>
+                              <div class="form-check form-check-inline mb-3 mt-3 col-4 my-auto mx-auto">
+                                <input class="form-check-input  " type="checkbox" id="portones" value="portones">
+                                <label class="form-check-label mt-1" for="portones">Arreglo de portones</label>
+                              </div>
                         </div>
-                            
-                
-                        <div class="contenido--cadaOpcion">
-                            
-                            <label for="persianas">Arreglo de persianas</label>
-                            <input type="checkbox" name="option" id="persianas" />
-                        </div>
-                        <div class="contenido--cadaOpcion">
-                            <label for="portones">Arreglo de portones</label>
-                            <input type="checkbox" name="option" id="portones" />    
-                        </div>
+                        
+                         
                     </div>
             </div>
-            <div class="contenido_consultaFrm">
-                <div>
-                    <textarea rows="10" cols="50" placeholder="Escriba su consulta..." name="consulta" id="consulta" maxlength="400" required></textarea>
-                </div>
+            <div class=" col-md-6 col-sm-12 col-lg-6">
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su consulta..." rows="10" maxlength="400" required></textarea>
+                  </div>
                 
-                <div class="contenido_botones">
-                    <input class="contenido--btnCon" type="reset" value="Limpiar">
-                    <input class="contenido--btnCon" type="submit" value="Enviar">
+                <div class="d-flex justify-content-evenly">
+                    <button type="submit" class="btn btn-outline-primary contenido--btnCon" value="Limpiar">Limpiar</button>
+                    <button type="submit" class="btn btn-outline-primary contenido--btnCon" value="Enviar">Enviar</button>
                 </div>
             </div>
         </form>
