@@ -411,7 +411,7 @@ li{
     color: rgb(255, 255, 255);
 }
 
-form input, form textarea{
+/* form input, form textarea{
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
@@ -421,7 +421,7 @@ form input, form textarea{
     resize: none; 
     font-family:'Mulish', sans-serif;
   }
-
+ */
 .contenido_datosFrm{
     min-width: 40vh;
     max-width: 80vh;
@@ -468,14 +468,14 @@ form input, form textarea{
     /*  border-radius: 2%; */
  }
 .contenido_ubicacion{
-    display: flex;
+   /*  display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 2% 0;
+    padding: 2% 0; */
     background-color: rgb(8, 8, 168) ;
     color: rgb(255, 255, 255);
-    min-height: 50vh;
+    /* min-height: 50vh; */
 }
 .mapa{
     grid-area: mapa;
@@ -484,6 +484,7 @@ form input, form textarea{
     
     width: 60%;
     min-height: 50vh;
+   
 }
 .contenido-imgMapa{
     min-height: 50vh;
@@ -494,7 +495,7 @@ form input, form textarea{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height: 50vh;
+    /* min-height: 50vh */;
 
 }
 
