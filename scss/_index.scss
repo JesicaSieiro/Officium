@@ -4,15 +4,26 @@
     height: 400px;
     object-fit: cover;
     margin: 2%;
+    
 
+}
+.carousel-caption{
+    text-align: end;
+    width: 40%;
+    display: absolute;
+    top: 25%;
+    left: 50%;
+    color: $colorSecundario;
+    padding: 10px;
+    font-size: 16px;
+   
+    height: fit-content;
+    .contenido_titImgSlider{
+        color:$colorPrimarioTutoriales;
+    }
 }
 /* servicios */
 .contenido_tituloServicios{
-   /*  color: $colorPrimarioIndex;
-    margin: 3% 0;
-    text-align: center;
-    text-decoration: underline;
-    text-underline-position: under;  */
     @include tituloPrincipal($colorPrimarioIndex);
 }
 

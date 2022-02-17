@@ -1,3 +1,9 @@
+/* MAPA */
+/* $colorSombras:(
+    "clara":rgb(189, 188, 188),
+    "media":rgb(88, 88, 88),
+    "oscura":rgb(63, 62, 62)
+); */
 /* extend */
 .contenido_galeria .contenido_cadaImagenGal:hover, .contenido_tutoriales .contenido_cadaVideoTut:hover, .contenido_cadaEmp:hover .contenido--txtEmpleadoCon {
   /*  background: $colorPrimarioNosotros;
@@ -28,13 +34,21 @@ li {
   object-fit: cover;
   margin: 2%; }
 
+.carousel-caption {
+  text-align: end;
+  width: 40%;
+  display: absolute;
+  top: 25%;
+  left: 50%;
+  color: #585858;
+  padding: 10px;
+  font-size: 16px;
+  height: fit-content; }
+  .carousel-caption .contenido_titImgSlider {
+    color: #037a03; }
+
 /* servicios */
 .contenido_tituloServicios {
-  /*  color: $colorPrimarioIndex;
-    margin: 3% 0;
-    text-align: center;
-    text-decoration: underline;
-    text-underline-position: under;  */
   width: fit-content;
   margin: auto;
   padding: 1%;
@@ -385,3 +399,46 @@ li {
       height: 400px; }
   .contenido_tutoriales .tituloModalTut {
     color: #037a03; }
+
+.contenido_tituloContacto {
+  width: fit-content;
+  margin: auto;
+  padding: 1%;
+  color: #0808a8;
+  text-decoration: underline;
+  text-underline-position: under; }
+
+.contenido_formulario {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3%;
+  background-color: #060677;
+  border-radius: 0.5%;
+  color: white; }
+  .contenido_formulario .contenido_serviciosChk {
+    align-items: flex-start;
+    padding: 1%;
+    background-color: #0b0bf1;
+    border-radius: 0.5%;
+    font-size: 15PX;
+    text-align: center;
+    margin: 1%; }
+  .contenido_formulario .contenido--btnCon {
+    width: 30%;
+    background: #0b0bf1;
+    color: white;
+    font-size: 18px;
+    /*  border-radius: 2%; */ }
+
+.contenido_ubicacion {
+  /*  display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: flex-start;
+     padding: 2% 0; */
+  background-color: #060677;
+  color: white;
+  /* min-height: 50vh; */ }
+  .contenido_ubicacion .contenido-imgMapa {
+    min-height: 50vh;
+    width: 100%; }

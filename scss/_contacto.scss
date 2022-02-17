@@ -1,0 +1,45 @@
+.contenido_tituloContacto{
+    @include tituloPrincipal($colorPrimarioContacto);
+    
+}
+
+.contenido_formulario{
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3%;
+    background-color: darken($colorPrimarioContacto,10) ;
+    border-radius: 0.5%;
+    color: $fondoClaro;
+    .contenido_serviciosChk{
+         align-items: flex-start;
+         padding: 1%;
+         background-color: lighten($colorPrimarioContacto,15);
+         border-radius: 0.5%;
+         font-size: 15PX;
+         text-align: center;
+         margin: 1%;
+     }
+     .contenido--btnCon{
+        width: 30%;
+        background: lighten($colorPrimarioContacto,15);
+        color: $fondoClaro;
+        font-size: 18px;
+       /*  border-radius: 2%; */
+    }
+}
+
+.contenido_ubicacion{
+    /*  display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: flex-start;
+     padding: 2% 0; */
+     background-color: darken($colorPrimarioContacto,10)  ;
+     color: $fondoClaro;
+     /* min-height: 50vh; */
+
+     .contenido-imgMapa{
+        min-height: 50vh;
+        width: 100%;
+    }
+ }
