@@ -1,13 +1,5 @@
-/* MAPA */
-/* $colorSombras:(
-    "clara":rgb(189, 188, 188),
-    "media":rgb(88, 88, 88),
-    "oscura":rgb(63, 62, 62)
-); */
 /* extend */
 .contenido_galeria .contenido_cadaImagenGal:hover, .contenido_tutoriales .contenido_cadaVideoTut:hover, .contenido_cadaEmp:hover .contenido--txtEmpleadoCon {
-  /*  background: $colorPrimarioNosotros;
-    color: $fondoClaro; */
   -webkit-box-shadow: 10px 10px 14px 2px #8a8989;
   box-shadow: 10px 10px 14px 2px #8a8989; }
 
@@ -15,6 +7,17 @@
   transform: scale(1.2, 1.2);
   z-index: 100;
   transition: 0.3s linear; }
+
+.contenido_servicios .contenido_txtSobreDer, .contenido_servicios .contenido_txtSobreIzq {
+  background: white;
+  border: solid 2px;
+  padding: 2%;
+  box-shadow: 2px 2px 2px #bdbcbc;
+  z-index: 10; }
+  .contenido_servicios .contenido_txtSobreDer .contenido--tituloCadaServ, .contenido_servicios .contenido_txtSobreIzq .contenido--tituloCadaServ {
+    text-decoration: underline #ca0d0d;
+    color: #ca0d0d;
+    text-underline-position: under; }
 
 /* mixin */
 body {
@@ -39,10 +42,12 @@ li {
   width: 40%;
   display: absolute;
   top: 25%;
-  left: 50%;
-  color: #585858;
-  padding: 10px;
+  left: 55%;
+  color: #252525;
+  padding: 15px;
   font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em rgba(255, 255, 255, 0.308);
   height: fit-content; }
   .carousel-caption .contenido_titImgSlider {
     color: #037a03; }
@@ -72,15 +77,7 @@ li {
       object-fit: cover; }
   .contenido_servicios .contenido_txtSobreDer {
     transform: translate(-50px, 15px);
-    background: white;
-    border: solid 2px;
-    padding: 2%;
-    box-shadow: 2px 2px 2px #bdbcbc;
     animation: ingresoDer 1s; }
-    .contenido_servicios .contenido_txtSobreDer .contenido--tituloCadaServ {
-      text-decoration: underline #ca0d0d;
-      color: #ca0d0d;
-      text-underline-position: under; }
 
 @keyframes ingresoDer {
   0% {
@@ -91,16 +88,7 @@ li {
     opacity: 1; } }
   .contenido_servicios .contenido_txtSobreIzq {
     transform: translate(60px, 15px);
-    background: white;
-    border: solid 2px;
-    padding: 2%;
-    box-shadow: 2px 2px 2px #bdbcbc;
-    z-index: 10;
     animation: ingresoIzq 1s; }
-    .contenido_servicios .contenido_txtSobreIzq .contenido--tituloCadaServ {
-      text-decoration: underline #ca0d0d;
-      color: #ca0d0d;
-      text-underline-position: under; }
 
 @keyframes ingresoIzq {
   0% {
@@ -117,6 +105,18 @@ li {
     .carousel .carousel--imgServ {
       object-fit: cover;
       height: 360px; }
+    .carousel-caption {
+      /* text-align: end;
+            width: 40%;
+            display: absolute;
+            top: 25%; */
+      left: 50%;
+      /* color: darken($colorSecundario,20);
+            padding: 10px;
+            font-size: 16px;
+            background-color: $fondoClaroTransparente;
+            border-radius: 20%;
+            font-weight: bold; */ }
   .cont_imagenServ {
     width: fit-content; }
   .contenido_servicios .contenido_txtSobreDer {
@@ -418,14 +418,14 @@ li {
   .contenido_formulario .contenido_serviciosChk {
     align-items: flex-start;
     padding: 1%;
-    background-color: #0b0bf1;
+    background-color: #2222f4;
     border-radius: 0.5%;
     font-size: 15PX;
     text-align: center;
     margin: 1%; }
   .contenido_formulario .contenido--btnCon {
     width: 30%;
-    background: #0b0bf1;
+    background: #2222f4;
     color: white;
     font-size: 18px;
     /*  border-radius: 2%; */ }

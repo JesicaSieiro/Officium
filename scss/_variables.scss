@@ -6,21 +6,15 @@ $colorPrimarioContacto:rgb(8, 8, 168);
 
 $colorSecundario:rgb(88, 88, 88);
 $fondoClaro:rgb(255, 255, 255);
+$fondoClaroTransparente:rgba(255, 255, 255, 0.308);
 $colorSombra:rgb(189, 188, 188);
 
 $colorFooter:rgb(63, 62, 62);
 $colorRedes:rgb(155, 153, 153);
 
-/* MAPA */
-/* $colorSombras:(
-    "clara":rgb(189, 188, 188),
-    "media":rgb(88, 88, 88),
-    "oscura":rgb(63, 62, 62)
-); */
+
 /* extend */
  %sombra{
-   /*  background: $colorPrimarioNosotros;
-    color: $fondoClaro; */
     -webkit-box-shadow: 10px 10px 14px 2px darken($colorSombra,20);
     box-shadow: 10px 10px 14px 2px darken($colorSombra,20);
 } 
@@ -31,6 +25,19 @@ $colorRedes:rgb(155, 153, 153);
     @extend %sombra;
     transition: 0.3s linear;
 }
+%textoCadaServ{
+    background: $fondoClaro;
+    border: solid 2px;
+    padding: 2%;
+    box-shadow: 2px 2px 2px $colorSombra;
+    z-index: 10;
+    .contenido--tituloCadaServ{
+        text-decoration: underline $colorPrimarioIndex;
+        color: $colorPrimarioIndex;
+        text-underline-position: under; 
+    }
+}
+
 
 /* mixin */
 @mixin fondoAnimacion($colorFondo){

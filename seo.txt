@@ -1,0 +1,7 @@
+Las modificaciones que se hicieron teniendo en cuenta el SEO son:
+-Alt en imagenes.
+-Se colocaron Keywords en cada pagina
+-Se colocaron desption en cada pagina.
+-Se puso el texto fuera de las imagenes en el slider.
+-Se coloco title en las paginas 
+-Se coloco el logo de la empresa en las pestañas. 

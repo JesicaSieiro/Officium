@@ -4,7 +4,6 @@
     height: 400px;
     object-fit: cover;
     margin: 2%;
-    
 
 }
 .carousel-caption{
@@ -12,10 +11,12 @@
     width: 40%;
     display: absolute;
     top: 25%;
-    left: 50%;
-    color: $colorSecundario;
-    padding: 10px;
+    left: 55%;
+    color: darken($colorSecundario,20);
+    padding: 15px;
     font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px $fondoClaro, 0 0 1em lighten($fondoClaro,10), 0 0 0.2em $fondoClaroTransparente;
    
     height: fit-content;
     .contenido_titImgSlider{
@@ -49,16 +50,8 @@
     
     .contenido_txtSobreDer{
         transform: translate(-50px, 15px);
-        background: $fondoClaro;
-        border: solid 2px;
-        padding: 2%;
-        box-shadow: 2px 2px 2px $colorSombra;
         animation: ingresoDer 1s;
-        .contenido--tituloCadaServ{
-            text-decoration: underline $colorPrimarioIndex;
-            color: $colorPrimarioIndex;
-            text-underline-position: under; 
-        }
+        @extend %textoCadaServ;
     }
     @keyframes ingresoDer {
         0% {
@@ -74,17 +67,8 @@
     
     .contenido_txtSobreIzq{
         transform: translate(60px, 15px);
-        background: $fondoClaro;
-        border: solid 2px;
-        padding: 2%;
-        box-shadow: 2px 2px 2px $colorSombra;
-        z-index: 10;
         animation: ingresoIzq 1s;
-        .contenido--tituloCadaServ{
-            text-decoration: underline $colorPrimarioIndex;
-            color: $colorPrimarioIndex;
-            text-underline-position: under; 
-        }
+        @extend %textoCadaServ;
     }
     @keyframes ingresoIzq {
         0% {
@@ -108,6 +92,19 @@
         .carousel--imgServ{
             object-fit: cover;
             height: 360px;
+        }
+        &-caption{
+            /* text-align: end;
+            width: 40%;
+            display: absolute;
+            top: 25%; */
+            left: 50%;
+            /* color: darken($colorSecundario,20);
+            padding: 10px;
+            font-size: 16px;
+            background-color: $fondoClaroTransparente;
+            border-radius: 20%;
+            font-weight: bold; */
         }
     }
 

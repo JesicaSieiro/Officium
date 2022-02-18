@@ -13,7 +13,7 @@
     .contenido_serviciosChk{
          align-items: flex-start;
          padding: 1%;
-         background-color: lighten($colorPrimarioContacto,15);
+         background-color: lighten($colorPrimarioContacto,20);
          border-radius: 0.5%;
          font-size: 15PX;
          text-align: center;
@@ -21,7 +21,7 @@
      }
      .contenido--btnCon{
         width: 30%;
-        background: lighten($colorPrimarioContacto,15);
+        background: lighten($colorPrimarioContacto,20);
         color: $fondoClaro;
         font-size: 18px;
        /*  border-radius: 2%; */
