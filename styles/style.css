@@ -20,6 +20,16 @@ li{
     align-items: center;
     justify-content: end;
 }
+.tuercaLogo{
+    position: absolute;
+    width: 4%;
+    margin-left: 1%;
+}
+
+.textoLogo{
+    margin: 10px 25px;
+    width: 98%;
+}
 /* FONDOS CABECERAS */
 .fondoMenuIndex{
     background-image: linear-gradient(to top, rgb(255 255 255 / 57%),rgb(249 230 230),rgb(255, 255, 255));

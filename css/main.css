@@ -166,6 +166,39 @@ li {
 /* FONDOS CABECERAS */
 /* .fondoMenuIndex{
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.61),rgb(249, 230, 230),rgb(255, 255, 255)); */
+.tuercaLogo {
+  position: absolute;
+  width: 4.3%;
+  margin-left: 1%;
+  /* animation: 3s rotacion linear ;
+        animation-delay: 1s; */
+  /* animation-play-state:paused; */
+  animation-name: rotacion;
+  animation-duration: 7s;
+  animation-iteration-count: infinite; }
+
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes rotacion {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+/* .imgr{
+        -webkit-animation: 3s rotate linear infinite;
+        animation: 3s rotate linear infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    } */
+.textoLogo {
+  margin: 5px 25px;
+  width: 60%; }
+
 .cabecera_logo {
   width: 300px;
   padding: 0.5%; }
