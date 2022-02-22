@@ -1,9 +1,27 @@
 /* CABECERA */
 
 /* FONDOS CABECERAS */
-/* .fondoMenuIndex{
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.61),rgb(249, 230, 230),rgb(255, 255, 255)); */
 
+
+    .tuercaLogo{
+        position: absolute;
+        width: 4.3%;
+        margin-left: 1%;
+        animation-name: rotacion;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rotacion {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}}
+        @-webkit-keyframes rotacion {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(360deg);}
+        }
+    .textoLogo{
+        margin: 5px 18px;
+        width: 60%;
+    }
         .cabecera_logo{
             width: 300px;
             padding: 0.5%;
@@ -39,6 +57,21 @@
         }
        
         /*fin Colores Menu*/
+
+@media only screen and (max-width:768px){
     
-    
-/* } */
+    .tuercaLogo{
+        width: 8.5%;
+    }
+} 
+@media only screen and (max-width:320px){
+    .textoLogo {
+        margin: 5px 20px;
+        width: 80%;
+    }
+    .tuercaLogo{
+        width: 15%;
+    } 
+} 
+
+

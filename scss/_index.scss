@@ -35,8 +35,6 @@
     padding: 4% 0;
     font-size: 16px;
     background-color: $fondoClaro;
-
-    /* carrusel de cada servicio */
     .contenido-cadaImagen{
         border: 2px solid $colorPrimarioIndex;
         box-shadow: 2px 2px 2px $colorSombra;
@@ -94,17 +92,7 @@
             height: 360px;
         }
         &-caption{
-            /* text-align: end;
-            width: 40%;
-            display: absolute;
-            top: 25%; */
             left: 50%;
-            /* color: darken($colorSecundario,20);
-            padding: 10px;
-            font-size: 16px;
-            background-color: $fondoClaroTransparente;
-            border-radius: 20%;
-            font-weight: bold; */
         }
     }
 
