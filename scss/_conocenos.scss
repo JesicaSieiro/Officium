@@ -24,17 +24,14 @@
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-evenly;
-    transition: 1s linear;
+    transition: .3s linear;
 
     &:hover{
         transform: scale(1.2, 1.2);
         z-index: 100;
-        /* @extend %sombraConocenos; */
     }
     &:hover .contenido--txtEmpleadoCon{
-        
-       /*  @extend %sombraConocenos ;*/
-       @include fondoAnimacion($colorPrimarioNosotros)
+       @include fondoAnimacion(lighten($colorPrimarioNosotros,10))
     }
 
     .contenido--fotoEmplCon{
@@ -64,9 +61,7 @@
         height: 200px;
         width: 90%;
         overflow-y: scroll;
-        /* &:hover{
-            @extend %sombraConocenos;
-        } */
+        
     }
 }
 

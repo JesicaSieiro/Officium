@@ -7,22 +7,11 @@
     padding-bottom: 3%;
 
     .contenido_cadaImagenGal{
-     /*    align-items: center;
-        flex-wrap: nowrap;
-        background-color: $fondoClaro ;
-        color: $colorSecundario;
-        padding: 0.5%;
-        height: inherit;
-        margin: 2%;
-        width: 20rem;
-        border: 2px solid $colorPrimarioGaleria; */
         @include contenidoImgVideo($colorPrimarioGaleria, $colorSecundario);
         &:hover{
-            /* transform: scale(1.2, 1.2);
-            z-index: 100; */
             @extend %animacionAgrandar;
-            background-color: $colorPrimarioGaleria;
-            /* transition: 1s linear; */
+            background-color: lighten($colorPrimarioGaleria,20);
+            
         }
 
         .card_imgGal{

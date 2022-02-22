@@ -1,7 +1,7 @@
 /* extend */
 .contenido_galeria .contenido_cadaImagenGal:hover, .contenido_tutoriales .contenido_cadaVideoTut:hover, .contenido_cadaEmp:hover .contenido--txtEmpleadoCon {
   -webkit-box-shadow: 10px 10px 14px 2px #8a8989;
-  box-shadow: 10px 10px 14px 2px #8a8989; }
+  box-shadow: 10px 10px 14px 2px #646363; }
 
 .contenido_galeria .contenido_cadaImagenGal:hover, .contenido_tutoriales .contenido_cadaVideoTut:hover {
   transform: scale(1.2, 1.2);
@@ -67,8 +67,7 @@ li {
   border-bottom: 1px solid #ca0d0d;
   padding: 4% 0;
   font-size: 16px;
-  background-color: white;
-  /* carrusel de cada servicio */ }
+  background-color: white; }
   .contenido_servicios .contenido-cadaImagen {
     border: 2px solid #ca0d0d;
     box-shadow: 2px 2px 2px #bdbcbc; }
@@ -106,17 +105,7 @@ li {
       object-fit: cover;
       height: 360px; }
     .carousel-caption {
-      /* text-align: end;
-            width: 40%;
-            display: absolute;
-            top: 25%; */
-      left: 50%;
-      /* color: darken($colorSecundario,20);
-            padding: 10px;
-            font-size: 16px;
-            background-color: $fondoClaroTransparente;
-            border-radius: 20%;
-            font-weight: bold; */ }
+      left: 50%; }
   .cont_imagenServ {
     width: fit-content; }
   .contenido_servicios .contenido_txtSobreDer {
@@ -164,15 +153,10 @@ li {
 
 /* CABECERA */
 /* FONDOS CABECERAS */
-/* .fondoMenuIndex{
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.61),rgb(249, 230, 230),rgb(255, 255, 255)); */
 .tuercaLogo {
   position: absolute;
   width: 4.3%;
   margin-left: 1%;
-  /* animation: 3s rotacion linear ;
-        animation-delay: 1s; */
-  /* animation-play-state:paused; */
   animation-name: rotacion;
   animation-duration: 7s;
   animation-iteration-count: infinite; }
@@ -189,14 +173,8 @@ li {
   to {
     -webkit-transform: rotate(360deg); } }
 
-/* .imgr{
-        -webkit-animation: 3s rotate linear infinite;
-        animation: 3s rotate linear infinite;
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-    } */
 .textoLogo {
-  margin: 5px 25px;
+  margin: 5px 18px;
   width: 60%; }
 
 .cabecera_logo {
@@ -252,7 +230,17 @@ li {
     color: #0808a8; }
 
 /*fin Colores Menu*/
-/* } */
+@media only screen and (max-width: 768px) {
+  .tuercaLogo {
+    width: 8.5%; } }
+
+@media only screen and (max-width: 320px) {
+  .textoLogo {
+    margin: 5px 20px;
+    width: 80%; }
+  .tuercaLogo {
+    width: 15%; } }
+
 .pie {
   background-color: #3f3e3e;
   margin-top: 2%;
@@ -302,14 +290,12 @@ li {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: 1s linear; }
+  transition: .3s linear; }
   .contenido_cadaEmp:hover {
     transform: scale(1.2, 1.2);
-    z-index: 100;
-    /* @extend %sombraConocenos; */ }
+    z-index: 100; }
   .contenido_cadaEmp:hover .contenido--txtEmpleadoCon {
-    /*  @extend %sombraConocenos ;*/
-    background: #fd6128;
+    background: #fd865b;
     color: white; }
   .contenido_cadaEmp .contenido--fotoEmplCon {
     width: 200px;
@@ -333,10 +319,7 @@ li {
     z-index: 1;
     height: 200px;
     width: 90%;
-    overflow-y: scroll;
-    /* &:hover{
-            @extend %sombraConocenos;
-        } */ }
+    overflow-y: scroll; }
 
 .contenido_tituloGal {
   width: fit-content;
@@ -350,15 +333,6 @@ li {
   flex-wrap: wrap;
   padding-bottom: 3%; }
   .contenido_galeria .contenido_cadaImagenGal {
-    /*    align-items: center;
-        flex-wrap: nowrap;
-        background-color: $fondoClaro ;
-        color: $colorSecundario;
-        padding: 0.5%;
-        height: inherit;
-        margin: 2%;
-        width: 20rem;
-        border: 2px solid $colorPrimarioGaleria; */
     width: 20rem;
     align-items: center;
     flex-wrap: nowrap;
@@ -370,10 +344,7 @@ li {
     padding: 1%;
     margin: 2%; }
     .contenido_galeria .contenido_cadaImagenGal:hover {
-      /* transform: scale(1.2, 1.2);
-            z-index: 100; */
-      background-color: #ecec05;
-      /* transition: 1s linear; */ }
+      background-color: #fcfc5b; }
     .contenido_galeria .contenido_cadaImagenGal .card_imgGal {
       height: 230px;
       object-fit: cover; }
@@ -390,16 +361,6 @@ li {
   flex-wrap: wrap;
   align-items: center; }
   .contenido_tutoriales .contenido_cadaVideoTut {
-    /*  width: 20rem;
-        align-items: center;
-        flex-wrap: nowrap;
-        border: 2px solid $colorPrimarioTutoriales;
-        border-radius: 2%;
-        font-size: 15px;
-        background-color: $fondoClaro ;
-        color: $colorPrimarioTutoriales;
-        padding:1% ;
-        margin: 2%; */
     width: 20rem;
     align-items: center;
     flex-wrap: nowrap;
@@ -411,11 +372,7 @@ li {
     padding: 1%;
     margin: 2%; }
     .contenido_tutoriales .contenido_cadaVideoTut:hover {
-      /* transform: scale(1.2, 1.2);
-            z-index: 100;
-            @extend %sombra; */
       background-color: #037a03;
-      /* transition: 1s linear; */
       color: white; }
     .contenido_tutoriales .contenido_cadaVideoTut .contenido-videoTut {
       margin: 1% 20%;
@@ -460,18 +417,11 @@ li {
     width: 30%;
     background: #2222f4;
     color: white;
-    font-size: 18px;
-    /*  border-radius: 2%; */ }
+    font-size: 18px; }
 
 .contenido_ubicacion {
-  /*  display: flex;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-     align-items: flex-start;
-     padding: 2% 0; */
   background-color: #060677;
-  color: white;
-  /* min-height: 50vh; */ }
+  color: white; }
   .contenido_ubicacion .contenido-imgMapa {
     min-height: 50vh;
     width: 100%; }
