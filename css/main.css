@@ -232,9 +232,9 @@ li {
 /*fin Colores Menu*/
 @media only screen and (max-width: 768px) {
   .tuercaLogo {
-    width: 8.5%; } }
+    width: 8.1%; } }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   .textoLogo {
     margin: 5px 20px;
     width: 80%; }
