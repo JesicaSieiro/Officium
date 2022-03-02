@@ -47,8 +47,10 @@
 
     
     .contenido_txtSobreDer{
-        transform: translate(-50px, 15px);
-        animation: ingresoDer 1s;
+        /* transform: translate(-50px, 15px); */
+        transform: translateZ(700px) translateY(300px) translateX(400px);
+        opacity: 0;
+        /* animation: ingresoDer 1s; */
         @extend %textoCadaServ;
     }
     @keyframes ingresoDer {
@@ -57,15 +59,17 @@
             opacity: 0;
         }
         100% {
-                transform: translate(-50px, 15px);
+                transform: translate(-50px, 1px);
                 opacity: 1;
         }
     }
   
     
     .contenido_txtSobreIzq{
-        transform: translate(60px, 15px);
-        animation: ingresoIzq 1s;
+        /* transform: translate(60px, 15px); */
+        transform: translateZ(700px) translateY(300px) translateX(-400px);
+        opacity: 0;
+        /* animation: ingresoIzq 1s; */
         @extend %textoCadaServ;
     }
     @keyframes ingresoIzq {
@@ -99,10 +103,16 @@
     .cont_imagenServ{
         width: fit-content;    
     }
+    .contenido_serviciosPintura{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .contenido_servicios {
         .contenido_txtSobreDer {
-            transform: translate(0, 15px);
-            animation: ingresoDer 1s;
+            /* transform: translate(0, 15px);
+            animation: ingresoDer 1s; */
+            transform: translateZ(700px) translateY(300px) translateX(400px);
+            opacity: 0;
         }
         @keyframes ingresoDer {
             0% {
@@ -115,10 +125,12 @@
             }
         }
 
-    
+        
         .contenido_txtSobreIzq {
-            transform: translate(0, 15px);
-            animation: ingresoIzq 1s;
+            /* transform: translate(0, 15px);
+            animation: ingresoIzq 1s; */
+            transform: translateZ(700px) translateY(300px) translateX(-400px);
+            opacity: 0;
         }
         
         @keyframes ingresoIzq {
@@ -144,7 +156,9 @@
     }
 
     .contenido_txtSobreDer {
-        transform: translate(0, 15px);
+        /* transform: translate(0, 15px); */
+        transform: translateZ(700px) translateY(300px) translateX(400px);
+        opacity: 0;
     }
     @keyframes ingresoDer {
         0% {
@@ -159,7 +173,9 @@
 
    
     .contenido_txtSobreIzq {
-        transform: translate(0, 15px);
+        /* transform: translate(0, 15px); */
+        transform: translateZ(700px) translateY(300px) translateX(-400px);
+        opacity: 0;
     }
     
     @keyframes ingresoIzq {
