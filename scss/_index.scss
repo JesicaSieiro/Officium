@@ -45,43 +45,21 @@
     
     }
 
-    
     .contenido_txtSobreDer{
-        /* transform: translate(-50px, 15px); */
-        transform: translateZ(700px) translateY(300px) translateX(400px);
+       @include posicionIngreso(400px,true);
         opacity: 0;
-        /* animation: ingresoDer 1s; */
         @extend %textoCadaServ;
     }
-    @keyframes ingresoDer {
-        0% {
-            transform: translateZ(700px) translateY(300px) translateX(400px);
-            opacity: 0;
-        }
-        100% {
-                transform: translate(-50px, 1px);
-                opacity: 1;
-        }
-    }
+    @include animacionIngreso(400px,translate(-50px, 1px),true);
+   
   
     
     .contenido_txtSobreIzq{
-        /* transform: translate(60px, 15px); */
-        transform: translateZ(700px) translateY(300px) translateX(-400px);
+        @include posicionIngreso(-400px);
         opacity: 0;
-        /* animation: ingresoIzq 1s; */
         @extend %textoCadaServ;
     }
-    @keyframes ingresoIzq {
-        0% {
-            transform: translateZ(700px) translateY(300px) translateX(-400px);
-            opacity: 0;
-        }
-        100% {
-            transform: translate(60px, 15px);
-            opacity: 1;
-        }
-    }
+    @include animacionIngreso(400px,translate(60px, 15px));
    
     
 }
@@ -109,31 +87,18 @@
     }
     .contenido_servicios {
         .contenido_txtSobreDer {
-            /* transform: translate(0, 15px);
-            animation: ingresoDer 1s; */
-            transform: translateZ(700px) translateY(300px) translateX(400px);
+            @include posicionIngreso(400px, true);
             opacity: 0;
         }
-        @keyframes ingresoDer {
-            0% {
-                transform: translateZ(700px) translateY(300px) translateX(400px);
-                opacity: 0;
-            }
-            100% {
-                    transform: translate(0, 15px);
-                    opacity: 1;
-            }
-        }
+        @include animacionIngreso(400px,translate(0px, 15px),true);
 
         
         .contenido_txtSobreIzq {
-            /* transform: translate(0, 15px);
-            animation: ingresoIzq 1s; */
-            transform: translateZ(700px) translateY(300px) translateX(-400px);
+            @include posicionIngreso(-400px);
             opacity: 0;
         }
         
-        @keyframes ingresoIzq {
+        /* @keyframes ingresoIzq {
             0% {
                 transform: translateZ(700px) translateY(300px) translateX(-400px);
                 opacity: 0;
@@ -142,7 +107,8 @@
                 transform: translate(0, 15px);
                 opacity: 1;
             }
-        }
+        } */
+        @include animacionIngreso(400px,translate(0px, 15px));
     }
 
 
@@ -153,40 +119,6 @@
     
     #container_slider{
         display: none;
-    }
-
-    .contenido_txtSobreDer {
-        /* transform: translate(0, 15px); */
-        transform: translateZ(700px) translateY(300px) translateX(400px);
-        opacity: 0;
-    }
-    @keyframes ingresoDer {
-        0% {
-            transform: translateZ(700px) translateY(300px) translateX(400px);
-            opacity: 0;
-        }
-        100% {
-                transform: translate(0, 15px);
-                opacity: 1;
-        }
-    }
-
-   
-    .contenido_txtSobreIzq {
-        /* transform: translate(0, 15px); */
-        transform: translateZ(700px) translateY(300px) translateX(-400px);
-        opacity: 0;
-    }
-    
-    @keyframes ingresoIzq {
-        0% {
-            transform: translateZ(700px) translateY(300px) translateX(-400px);
-            opacity: 0;
-        }
-        100% {
-            transform: translate(0, 15px);
-            opacity: 1;
-        }
     }
 
 }

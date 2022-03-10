@@ -37,7 +37,12 @@ $colorRedes:rgb(155, 153, 153);
         text-underline-position: under; 
     }
 }
-
+/* %ingresoDer{
+    transform: translateZ(700px) translateY(300px) translateX(400px);
+}
+%ingresoIzq{
+    transform: translateZ(700px) translateY(300px) translateX(-400px);
+} */
 
 /* mixin */
 @mixin fondoAnimacion($colorFondo){
@@ -66,4 +71,42 @@ $colorRedes:rgb(155, 153, 153);
     color: $texto;
     padding:1% ;
     margin: 2%;
+}
+@mixin posicionIngreso($horizontal, $derecha:false){
+   @if $derecha{
+    transform: translateZ(700px) translateY(300px) translateX($horizontal);
+   }
+   @else{
+    transform: translateZ(700px) translateY(300px) translateX($horizontal*-1);
+   }
+    
+}
+
+@mixin animacionIngreso( $horizontal,$posicionFinal,$derecha:false){
+   
+    @if $derecha{
+        @keyframes ingresoDer {
+            0% {
+                    @include posicionIngreso($horizontal,$derecha);
+                    opacity: 0;
+                }
+            100% {
+                    transform: $posicionFinal;
+                    opacity: 1;
+            }
+        }
+    }
+    @else{
+        @keyframes ingresoIzq {
+            0% {
+                    @include posicionIngreso($horizontal,$derecha);
+                    opacity: 0;
+                }
+            100% {
+                    transform: $posicionFinal;
+                    opacity: 1;
+            }
+        }
+    }
+    
 }
