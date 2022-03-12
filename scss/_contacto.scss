@@ -24,14 +24,9 @@
             
         }
      }
-     /* .form-control:focus{
-         border-color: #fa9907;
-         box-shadow: 10px 10px 14px 2px $colorPrimarioContacto;   
-     } */
      textarea:focus, input:focus, input[type]:focus {
         border-color: rgb(255, 144, 0);
         box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgb(255, 144, 0);;
-        /* box-shadow: 10px 10px 14px 2px $colorPrimarioContacto;  */
         outline: 0 none;
     }
      .contenido--btnCon{

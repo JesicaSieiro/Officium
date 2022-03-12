@@ -37,12 +37,6 @@ $colorRedes:rgb(155, 153, 153);
         text-underline-position: under; 
     }
 }
-/* %ingresoDer{
-    transform: translateZ(700px) translateY(300px) translateX(400px);
-}
-%ingresoIzq{
-    transform: translateZ(700px) translateY(300px) translateX(-400px);
-} */
 
 /* mixin */
 @mixin fondoAnimacion($colorFondo){
