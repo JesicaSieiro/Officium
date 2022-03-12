@@ -20,12 +20,6 @@
     color: #ca0d0d;
     text-underline-position: under; }
 
-/* %ingresoDer{
-    transform: translateZ(700px) translateY(300px) translateX(400px);
-}
-%ingresoIzq{
-    transform: translateZ(700px) translateY(300px) translateX(-400px);
-} */
 /* mixin */
 body {
   font-family: 'Mulish', sans-serif;
@@ -151,20 +145,9 @@ li {
   .contenido_serviciosPintura {
     display: flex;
     flex-direction: column-reverse; }
-  .contenido_servicios {
-    /* @keyframes ingresoIzq {
-            0% {
-                transform: translateZ(700px) translateY(300px) translateX(-400px);
-                opacity: 0;
-            }
-            100% {
-                transform: translate(0, 15px);
-                opacity: 1;
-            }
-        } */ }
-    .contenido_servicios .contenido_txtSobreDer {
-      transform: translateZ(700px) translateY(300px) translateX(400px);
-      opacity: 0; }
+  .contenido_servicios .contenido_txtSobreDer {
+    transform: translateZ(700px) translateY(300px) translateX(400px);
+    opacity: 0; }
   @keyframes ingresoDer {
     0% {
       transform: translateZ(700px) translateY(300px) translateX(400px);
@@ -172,9 +155,9 @@ li {
     100% {
       transform: translate(0px, 15px);
       opacity: 1; } }
-    .contenido_servicios .contenido_txtSobreIzq {
-      transform: translateZ(700px) translateY(300px) translateX(400px);
-      opacity: 0; }
+  .contenido_servicios .contenido_txtSobreIzq {
+    transform: translateZ(700px) translateY(300px) translateX(400px);
+    opacity: 0; }
   @keyframes ingresoIzq {
     0% {
       transform: translateZ(700px) translateY(300px) translateX(-400px);
@@ -444,11 +427,7 @@ li {
   padding: 3%;
   background-color: #060677;
   border-radius: 0.5%;
-  color: white;
-  /* .form-control:focus{
-         border-color: #fa9907;
-         box-shadow: 10px 10px 14px 2px $colorPrimarioContacto;   
-     } */ }
+  color: white; }
   .contenido_formulario .contenido_serviciosChk {
     align-items: flex-start;
     padding: 1%;
@@ -462,7 +441,6 @@ li {
   .contenido_formulario textarea:focus, .contenido_formulario input:focus, .contenido_formulario input[type]:focus {
     border-color: #ff9000;
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px #ff9000;
-    /* box-shadow: 10px 10px 14px 2px $colorPrimarioContacto;  */
     outline: 0 none; }
   .contenido_formulario .contenido--btnCon {
     width: 30%;

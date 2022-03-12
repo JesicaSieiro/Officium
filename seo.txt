@@ -5,3 +5,4 @@ Las modificaciones que se hicieron teniendo en cuenta el SEO son:
 -Se puso el texto fuera de las imagenes en el slider.
 -Se coloco title en las paginas 
 -Se coloco el logo de la empresa en las pestañas. 
+-Disminucion de peso de imagenes

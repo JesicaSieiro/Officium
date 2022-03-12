@@ -8,21 +8,18 @@ window.addEventListener('scroll',function(){
     let carruselPintura=document.getElementById('carruselPintura');
     let carruselPersiana=document.getElementById('carruselPersiana');
 
-    /* obtengo la posicion de cada elemento */
-  /*   let posiciontxtPorton=textoPortones.getBoundingClientRect().top;
-    let posiciontxtPintura=textoPintura.getBoundingClientRect().top;
-    let posiciontxtPersiana=textoPersianas.getBoundingClientRect().top; */
+
 
     let posicioncarruselPorton=carruselPortones.getBoundingClientRect().top;
     let posicioncarruselPersiana=carruselPersiana.getBoundingClientRect().top;
     let posicioncarruselPintura=carruselPintura.getBoundingClientRect().top;
 
     /* obtengo el tamano de la pantalla */
-    let tamPantalla=this.window.innerHeight/3;
-    //let anchoPantalla=this.window.innerWidth/3;
+    let tamPantalla=this.window.innerHeight/2;
+
 
     if(screen.width >= 1024){
-       // console.log(anchoPantalla);
+
         if(posicioncarruselPorton < tamPantalla ){
             textoPortones.style.animation='ingresoDer 1s';
             textoPortones.style.setProperty('transform','translate(-50px, 1px)');
